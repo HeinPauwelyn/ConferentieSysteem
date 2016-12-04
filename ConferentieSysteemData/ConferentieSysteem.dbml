@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="ConferentieSysteemDatabase" Class="ConferentieSysteemDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\ConferentieSysteemDatabase.mdf;Integrated Security=True;Pooling=True" SettingsObjectName="ConferentieSysteemData.Properties.Settings" SettingsPropertyName="ConferentieSysteemDatabaseConnectionString2" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Sessie" Member="Sessies">
+    <Type Name="Sessie">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="AanvangUur" Type="System.TimeSpan" DbType="Time NOT NULL" CanBeNull="false" />
+      <Column Name="EindUur" Type="System.TimeSpan" DbType="Time NOT NULL" CanBeNull="false" />
+      <Column Name="ExpertID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ConferentieDagID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IsKeynote" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="LokaalID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DomeinID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Sessie_Evaluatie" Member="Evaluaties" ThisKey="ID" OtherKey="SessieID" Type="Evaluatie" />
+      <Association Name="ConferentieDag_Sessie" Member="ConferentieDag" ThisKey="ConferentieDagID" OtherKey="ID" Type="ConferentieDag" IsForeignKey="true" />
+      <Association Name="ExpertiseDomein_Sessie" Member="ExpertiseDomein" ThisKey="DomeinID" OtherKey="ID" Type="ExpertiseDomein" IsForeignKey="true" />
+      <Association Name="Lokaal_Sessie" Member="Lokaal" ThisKey="LokaalID" OtherKey="ID" Type="Lokaal" IsForeignKey="true" />
+      <Association Name="Persoon_Sessie" Member="Persoon" ThisKey="ExpertID" OtherKey="ID" Type="Persoon" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Bedrijf" Member="Bedrijfs">
+    <Type Name="Bedrijf">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Bedrijfsnaam" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Straat" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Huisnummer" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="GemeenteID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TelefoonNummer" Type="System.String" DbType="NVarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="GsmNummer" Type="System.String" DbType="NVarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="EmailAdres" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="BtwNummer" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Association Name="Bedrijf_Persoon" Member="Persoons" ThisKey="ID" OtherKey="BedrijfID" Type="Persoon" />
+      <Association Name="Gemeente_Bedrijf" Member="Gemeente" ThisKey="GemeenteID" OtherKey="ID" Type="Gemeente" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Betaald" Member="Betaalds">
+    <Type Name="Betaald">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Bedrag" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+      <Column Name="FactuurID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Factuur_Betaald" Member="Factuur" ThisKey="FactuurID" OtherKey="ID" Type="Factuur" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Conferentie" Member="Conferenties">
+    <Type Name="Conferentie">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NaamConferentie" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Beschrijving" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="VoorzitterID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Inschrijvingslimiet" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="MaxDeelnemers" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="StartInschrijvingen" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Association Name="Conferentie_ConferentieDag" Member="ConferentieDags" ThisKey="ID" OtherKey="ConferentieID" Type="ConferentieDag" />
+      <Association Name="Persoon_Conferentie" Member="Persoon" ThisKey="VoorzitterID" OtherKey="ID" Type="Persoon" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ConferentieDag" Member="ConferentieDags">
+    <Type Name="ConferentieDag">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Datum" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="InschrijvingsGeld" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+      <Column Name="ConferentieID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="ConferentieDag_Sessie" Member="Sessies" ThisKey="ID" OtherKey="ConferentieDagID" Type="Sessie" />
+      <Association Name="ConferentieDag_InschrijvingConferntieDagLink" Member="InschrijvingConferntieDagLinks" ThisKey="ID" OtherKey="ConferentieDagID" Type="InschrijvingConferntieDagLink" />
+      <Association Name="Conferentie_ConferentieDag" Member="Conferentie" ThisKey="ConferentieID" OtherKey="ID" Type="Conferentie" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Expertise" Member="Expertises">
+    <Type Name="Expertise">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ExpertiseNaam" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Beschrijving" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="Expertise_ExpertiseDomein" Member="ExpertiseDomeins" ThisKey="ID" OtherKey="ExpertiseID" Type="ExpertiseDomein" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ExpertiseDomein" Member="ExpertiseDomeins">
+    <Type Name="ExpertiseDomein">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ExpertiseID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ExpertiseDomeinNaam" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Beschrijving" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="ExpertiseDomein_Sessie" Member="Sessies" ThisKey="ID" OtherKey="DomeinID" Type="Sessie" />
+      <Association Name="ExpertiseDomein_OvereenkomstExpertiseDomeinLink" Member="OvereenkomstExpertiseDomeinLinks" ThisKey="ID" OtherKey="ExpertiseDomeinID" Type="OvereenkomstExpertiseDomeinLink" />
+      <Association Name="ExpertiseDomein_PersoonExpertiseDomeinLink" Member="PersoonExpertiseDomeinLinks" ThisKey="ID" OtherKey="ExpertiseDomeinID" Type="PersoonExpertiseDomeinLink" />
+      <Association Name="Expertise_ExpertiseDomein" Member="Expertise" ThisKey="ExpertiseID" OtherKey="ID" Type="Expertise" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Factuur" Member="Factuurs">
+    <Type Name="Factuur">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TotaalBedrag" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+      <Column Name="InschrijvingID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FactuurNummer" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="OpmaakDatum" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="Bestandslokatie" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="Factuur_Betaald" Member="Betaalds" ThisKey="ID" OtherKey="FactuurID" Type="Betaald" />
+      <Association Name="Inschrijving_Factuur" Member="Inschrijving" ThisKey="InschrijvingID" OtherKey="ID" Type="Inschrijving" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Functie" Member="Functies">
+    <Type Name="Functie">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FunctieNaam" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Functie_Persoon" Member="Persoons" ThisKey="ID" OtherKey="FunctieID" Type="Persoon" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Gemeente" Member="Gemeentes">
+    <Type Name="Gemeente">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Postcode" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="GemeenteNaam" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ProvincieID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Gemeente_Bedrijf" Member="Bedrijfs" ThisKey="ID" OtherKey="GemeenteID" Type="Bedrijf" />
+      <Association Name="Gemeente_Persoon" Member="Persoons" ThisKey="ID" OtherKey="GemeenteID" Type="Persoon" />
+      <Association Name="Provincie_Gemeente" Member="Provincie" ThisKey="ProvincieID" OtherKey="ID" Type="Provincie" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.InschrijvingConferntieDagLink" Member="InschrijvingConferntieDagLinks">
+    <Type Name="InschrijvingConferntieDagLink">
+      <Column Name="InschrijvingID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ConferentieDagID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="ConferentieDag_InschrijvingConferntieDagLink" Member="ConferentieDag" ThisKey="ConferentieDagID" OtherKey="ID" Type="ConferentieDag" IsForeignKey="true" />
+      <Association Name="Inschrijving_InschrijvingConferntieDagLink" Member="Inschrijving" ThisKey="InschrijvingID" OtherKey="ID" Type="Inschrijving" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Lokaal" Member="Lokaals">
+    <Type Name="Lokaal">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LokaalNummer" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Association Name="Lokaal_Sessie" Member="Sessies" ThisKey="ID" OtherKey="LokaalID" Type="Sessie" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Overeenkomst" Member="Overeenkomsts">
+    <Type Name="Overeenkomst">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ExpertID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="VoorzitterID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="BeginDatum" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="EindDatum" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="Bestandslokatie" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="Overeenkomst_OvereenkomstExpertiseDomeinLink" Member="OvereenkomstExpertiseDomeinLinks" ThisKey="ID" OtherKey="OvereenkomstID" Type="OvereenkomstExpertiseDomeinLink" />
+      <Association Name="Persoon_Overeenkomst" Member="Persoon" ThisKey="ExpertID" OtherKey="ID" Type="Persoon" IsForeignKey="true" />
+      <Association Name="Persoon_Overeenkomst1" Member="Persoon1" ThisKey="VoorzitterID" OtherKey="ID" Type="Persoon" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.OvereenkomstExpertiseDomeinLink" Member="OvereenkomstExpertiseDomeinLinks">
+    <Type Name="OvereenkomstExpertiseDomeinLink">
+      <Column Name="OvereenkomstID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ExpertiseDomeinID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="ExpertiseDomein_OvereenkomstExpertiseDomeinLink" Member="ExpertiseDomein" ThisKey="ExpertiseDomeinID" OtherKey="ID" Type="ExpertiseDomein" IsForeignKey="true" />
+      <Association Name="Overeenkomst_OvereenkomstExpertiseDomeinLink" Member="Overeenkomst" ThisKey="OvereenkomstID" OtherKey="ID" Type="Overeenkomst" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Persoon" Member="Persoons">
+    <Type Name="Persoon">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Voornaam" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Achternaam" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Straat" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Huisnummer" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="GemeenteID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TelefoonNummer" Type="System.String" DbType="NVarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="GsmNummer" Type="System.String" DbType="NVarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="EmailAdres" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FunctieID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="BedrijfID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Gebruikernaam" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Wachtwoord" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Association Name="Persoon_Sessie" Member="Sessies" ThisKey="ID" OtherKey="ExpertID" Type="Sessie" />
+      <Association Name="Persoon_Conferentie" Member="Conferenties" ThisKey="ID" OtherKey="VoorzitterID" Type="Conferentie" />
+      <Association Name="Persoon_Overeenkomst" Member="Overeenkomsts" ThisKey="ID" OtherKey="ExpertID" Type="Overeenkomst" />
+      <Association Name="Persoon_Overeenkomst1" Member="Overeenkomsts1" ThisKey="ID" OtherKey="VoorzitterID" Type="Overeenkomst" />
+      <Association Name="Persoon_PersoonExpertiseDomeinLink" Member="PersoonExpertiseDomeinLinks" ThisKey="ID" OtherKey="ExpertID" Type="PersoonExpertiseDomeinLink" />
+      <Association Name="Persoon_Inschrijving" Member="Inschrijvings" ThisKey="ID" OtherKey="DeelnemerID" Type="Inschrijving" />
+      <Association Name="Persoon_Evaluatie" Member="Evaluaties" ThisKey="ID" OtherKey="DeelnemerID" Type="Evaluatie" />
+      <Association Name="Persoon_Evaluatie1" Member="Evaluaties1" ThisKey="ID" OtherKey="ExpertID" Type="Evaluatie" />
+      <Association Name="Bedrijf_Persoon" Member="Bedrijf" ThisKey="BedrijfID" OtherKey="ID" Type="Bedrijf" IsForeignKey="true" />
+      <Association Name="Functie_Persoon" Member="Functie" ThisKey="FunctieID" OtherKey="ID" Type="Functie" IsForeignKey="true" />
+      <Association Name="Gemeente_Persoon" Member="Gemeente" ThisKey="GemeenteID" OtherKey="ID" Type="Gemeente" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PersoonExpertiseDomeinLink" Member="PersoonExpertiseDomeinLinks">
+    <Type Name="PersoonExpertiseDomeinLink">
+      <Column Name="ExpertID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ExpertiseDomeinID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Persoon_PersoonExpertiseDomeinLink" Member="Persoon" ThisKey="ExpertID" OtherKey="ID" Type="Persoon" IsForeignKey="true" />
+      <Association Name="ExpertiseDomein_PersoonExpertiseDomeinLink" Member="ExpertiseDomein" ThisKey="ExpertiseDomeinID" OtherKey="ID" Type="ExpertiseDomein" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Provincie" Member="Provincies">
+    <Type Name="Provincie">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ProvincieNaam" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Provincie_Gemeente" Member="Gemeentes" ThisKey="ID" OtherKey="ProvincieID" Type="Gemeente" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Inschrijving" Member="Inschrijvings">
+    <Type Name="Inschrijving">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DeelnemerID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Datum" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Association Name="Inschrijving_Factuur" Member="Factuurs" ThisKey="ID" OtherKey="InschrijvingID" Type="Factuur" />
+      <Association Name="Inschrijving_InschrijvingConferntieDagLink" Member="InschrijvingConferntieDagLinks" ThisKey="ID" OtherKey="InschrijvingID" Type="InschrijvingConferntieDagLink" />
+      <Association Name="Persoon_Inschrijving" Member="Persoon" ThisKey="DeelnemerID" OtherKey="ID" Type="Persoon" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Evaluatie" Member="Evaluaties">
+    <Type Name="Evaluatie">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ExpertID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DeelnemerID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Schore" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="Opmerkingen" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="SessieID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Persoon_Evaluatie" Member="Persoon" ThisKey="DeelnemerID" OtherKey="ID" Type="Persoon" IsForeignKey="true" />
+      <Association Name="Persoon_Evaluatie1" Member="Persoon1" ThisKey="ExpertID" OtherKey="ID" Type="Persoon" IsForeignKey="true" />
+      <Association Name="Sessie_Evaluatie" Member="Sessie" ThisKey="SessieID" OtherKey="ID" Type="Sessie" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

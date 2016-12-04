@@ -1,0 +1,387 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="f7db9ad0-3c10-4fab-8b2e-0b59bebcb219" name="Conferentie systeem" linkedPackageId="d6c87d8c-5e4b-4e9b-a36b-d86e34c29e48" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <ownedCommentsInternal>
+    <comment Id="361e4e7b-233b-4714-ad74-3951302ebaee">
+      <elementDefinition Id="c21a475f-0189-4820-bb24-8aaffd99114f" />
+      <body>Hein Pauwelyn
+16/03/2014
+
+Conferentie Systeem (eindwerk)
+Use case diagram</body>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="42c5536b-9c97-41db-bcb1-093d30fca46d" name="Conferentie voorzitter" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8c16ba40-bc7f-4888-b0b4-191e23681a67" />
+        <targetEnds>
+          <association Id="6974df24-4f45-4ae8-a791-8d5b35d9277b" isDerived="false" sourceEndRoleName="Conferentie voorzitter" targetEndRoleName="Legt lokaak vast " isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="604c8cd8-3f46-465f-b9a7-471830c5523b" LastKnownName="Conferentie plannen" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="83350376-4e3c-4521-b8fb-5fe9619f7f6a" name="Conferentie voorzitter" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ae4b5563-7cf3-42ea-96d1-98d906bf4f85" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a1a6d538-1f2e-4bb5-a6c6-3c478e5647df" name="Legt lokaak vast " isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="11f449ad-295d-402e-8732-5b9f121d55cc" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="44cbd542-9dc0-4289-8b32-6858d9fd9d82" />
+          </association>
+          <association Id="5aa4871f-31c6-45c8-954a-7471c373fcac" isDerived="false" sourceEndRoleName="Conferentie voorzitter" targetEndRoleName="Registreren van inschrijvingen (via post)" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="467a12c1-349d-4fcb-90c3-e41053de611b" LastKnownName="Registreren van inschrijvingen (via post)" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6e4809f3-f1df-4faa-bfdd-ae78dbccaeb1" name="Conferentie voorzitter" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a35d1f8d-54c5-4a93-a96f-425da15e41a0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="75b54911-d54f-4090-a0d5-8155e9f62fcd" name="Registreren van inschrijvingen (via post)" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="43998a01-e9d2-4d76-a408-81a24d02d6f7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="8439f920-6e77-468b-9bed-ba4bb80b9266" />
+          </association>
+          <association Id="dc591fcf-6b30-482c-acf1-4acb133f6842" isDerived="false" sourceEndRoleName="Conferentie voorzitter" targetEndRoleName="stelt contracten op met experten" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="e67dfb6c-91e6-4cc1-adb0-66176146279a" LastKnownName="stelt contracten op met experten" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9e1170b4-f36c-4d65-8d14-21ba508187e6" name="Conferentie voorzitter" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ddead62d-afe2-4d2b-84fa-24275e0d8a63" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a5717654-a088-4ddd-8b2f-95c9dfb9ef38" name="stelt contracten op met experten" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="5f3ae26e-0def-40ba-aa3d-9ecd8f3c0e8e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="180cafee-008b-4f40-9638-a96ac1c502bb" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="9296fdaf-3b64-4a7a-a9aa-c953d08dc146" name="Experten" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="00f5958c-8a3e-4cb1-b392-26551e94a9da" />
+        <targetEnds>
+          <association Id="9ca15ba3-b439-4bf1-97cc-91288ed1eea3" isDerived="false" sourceEndRoleName="Experten" targetEndRoleName="Plaatsen vrije dage online" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="e30749e3-45ff-4e24-81e6-61ef06eee41c" LastKnownName="Plaatsen vrije dagen online" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="72e7623b-04a5-4ce0-81cb-9e8662dc4ab9" name="Experten" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="94c1f5bc-1e41-4467-bc33-07cdb6d29bcd" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="707efb05-5b56-418e-989b-460f6128ae5e" name="Plaatsen vrije dage online" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="bcb530c7-8671-4167-a357-27be18fea861" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b7c52c44-a08e-4ed6-8fdf-1fa6c27b70fe" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="da5c1f91-358a-4d7f-aea0-4960e005ca3e" name="Conferentie organizeren" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="260daa38-095e-4432-85fa-144527ea8b1d" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="604c8cd8-3f46-465f-b9a7-471830c5523b" name="Conferentie plannen" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="93151688-d5df-405e-93f4-869e5c9adc8a" />
+        <suppliersInternal>
+          <dependency Id="6da2b85d-d033-4543-98a1-1a53f71a023a">
+            <useCaseMoniker Id="a4e17beb-5536-4d95-a51e-27b70fea8a1b" LastKnownName="Legt lokal vast" />
+            <elementDefinition Id="15193f71-2fc2-4718-abe3-d08fc3cc83cf" />
+          </dependency>
+          <dependency Id="45e701fd-e303-4219-be2a-965f5a71e50a">
+            <useCaseMoniker Id="74245474-0957-4e23-9c13-12ec15357865" LastKnownName="Neemt contact op met extern bedrijf" />
+            <elementDefinition Id="296cfd63-537b-457b-a200-7f918f42f10b" />
+          </dependency>
+          <dependency Id="c7a59622-1871-4c70-abf8-9813f465e02b">
+            <useCaseMoniker Id="c1cf59d1-e680-4993-b67e-6322a7d3a3b8" LastKnownName="Selecteerd experten" />
+            <elementDefinition Id="5a1ca265-e693-41da-8cb3-7b533f8a794a" />
+          </dependency>
+          <dependency Id="04a23b06-cf78-46c7-b820-7202ca667ee3">
+            <useCaseMoniker Id="db6c03c3-5702-4020-84eb-a14926b76743" LastKnownName="Maakt contract op" />
+            <elementDefinition Id="d20e47ac-71e3-4c77-8049-427ebc72a40d" />
+          </dependency>
+          <dependency Id="960ec276-e8fc-4de3-b593-a91837614932">
+            <useCaseMoniker Id="13ed0b8a-947d-4b12-91c0-b93600b7ee1f" LastKnownName="Maakt een uurregeling" />
+            <elementDefinition Id="23ce3234-8b65-4fd8-9cc0-fdf71f63537c" />
+          </dependency>
+          <dependency Id="30d02fbd-16d7-4765-a713-0019e6fc6ac9">
+            <useCaseMoniker Id="322e7895-300d-49d1-8e54-37dc44b4d420" LastKnownName="Plaats conferentie online en zorgt voor een inschrijvinsmanier" />
+            <elementDefinition Id="9f7305d3-929c-473a-b763-d241cb2a8210" />
+          </dependency>
+        </suppliersInternal>
+        <subjects>
+          <subsystemMoniker Id="da5c1f91-358a-4d7f-aea0-4960e005ca3e" LastKnownName="Conferentie organizeren" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="38e29c5c-faa5-4643-b17c-1d530a6f24a3" name="Beoordeeld de experten" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1e150893-42f6-4075-b3dd-187ffc8fb26b" />
+        <subjects>
+          <subsystemMoniker Id="c6eda99d-df39-4ecc-9b4b-2fbd0e0e28b7" LastKnownName="Evaluaties" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <useCaseModelRootHasTypes>
+      <actor Id="57a09f4c-1af2-4182-8345-96989d136184" name="Deelnemer" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="39b5203e-acea-49a6-9472-149959481519" />
+        <targetEnds>
+          <association Id="52bc58d8-ef03-4ded-8dbf-80d1f5e526b1" isDerived="false" sourceEndRoleName="Deelnemer" targetEndRoleName="Beoordeeld de experten" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="38e29c5c-faa5-4643-b17c-1d530a6f24a3" LastKnownName="Beoordeeld de experten" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="63e35a15-69c5-46bb-a1d3-74dc04cd903c" name="Deelnemer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3befaea4-6f4f-403d-bfad-77b17bee0282" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="476b92ec-9f62-4768-baa8-b8eaad7cd965" name="Beoordeeld de experten" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="08fea4c8-f75c-47f3-841a-131603b452af" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="0e7a128e-85b7-4792-af88-2a14b28558cb" />
+          </association>
+          <association Id="0a9034b8-9708-4b62-ab10-71e5e2a5905e" isDerived="false" sourceEndRoleName="Deelnemer" targetEndRoleName="UseCase1" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="0c18d9ea-8e33-4faf-bf25-54c725bc1ec6" LastKnownName="Schrijft zich in via internet" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c580be64-1549-4bbb-8350-cc75acc212b7" name="Deelnemer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1a522395-4ff4-495b-9953-4dcd254df38a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="495dacf4-e72b-4f83-b846-a1bd37615ba9" name="UseCase1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="bd929367-d78c-44c5-8a4b-32c51a6a560e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="04101572-cee1-4995-a523-3ad2f64e1c61" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="e67dfb6c-91e6-4cc1-adb0-66176146279a" name="stelt contracten op met experten" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e1a52c33-ae77-4a6c-9a3f-89d23a3c1504" />
+        <subjects>
+          <subsystemMoniker Id="da5c1f91-358a-4d7f-aea0-4960e005ca3e" LastKnownName="Conferentie organizeren" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <useCaseModelRootHasTypes>
+      <actor Id="6a57f1ae-64f2-4abc-95c5-0172826bcc9d" name="Adminestratieve medewerker" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="25b593e6-ff75-4f38-a9f3-3c1748414bd2" />
+        <targetEnds>
+          <association Id="f7372881-36eb-40b4-8095-7861f6760094" isDerived="false" sourceEndRoleName="Adminestratieve medewerker" targetEndRoleName="Registratie in het systeem" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="c52c873b-41df-40bf-85d9-899303f4a2b7" LastKnownName="Registratie van evaluaties in het systeem" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0cd374da-9475-45c2-9d95-9e6c311ebb43" name="Adminestratieve medewerker" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c70e6fc1-0ec6-4470-b521-1b247c014ea2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bcfcfe8e-2e61-4ca1-be44-40a567cd4322" name="Registratie in het systeem" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="36e05f88-0721-4e1b-ad4a-c66efb9474ab" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="992a8dbf-9add-49f3-8c41-cfa7d363f242" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c52c873b-41df-40bf-85d9-899303f4a2b7" name="Registratie van evaluaties in het systeem" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="db1f390c-3eb0-44fa-95be-9b9da40d16e3" />
+        <suppliersInternal>
+          <dependency Id="f5699fe9-bbdd-443b-81fe-f8a97fbe4f13">
+            <useCaseMoniker Id="bf66d4e2-1a7c-4368-bf05-b88b21adac19" LastKnownName="Verzamelt de evaluaties" />
+            <elementDefinition Id="9c467013-7418-4778-b1eb-ce9babff6f96" />
+          </dependency>
+          <dependency Id="eb544095-231b-48ca-adb4-5d5915ea54d8">
+            <useCaseMoniker Id="760d3900-1bb3-4e1d-bffc-bcb54a2e2a8a" LastKnownName="Vult de gegevens in het systeem" />
+            <elementDefinition Id="069957e1-3b7c-4b92-8b15-18633bb5a1eb" />
+          </dependency>
+          <dependency Id="0c19b83f-60e0-445f-be26-dceffbac6ee8">
+            <useCaseMoniker Id="6406cfd3-fbef-48ca-b183-1b9ba18095d7" LastKnownName="Berekend de uitslag" />
+            <elementDefinition Id="77215848-c86e-4e6c-a92b-5b388f0ee9e1" />
+          </dependency>
+        </suppliersInternal>
+        <subjects>
+          <subsystemMoniker Id="c6eda99d-df39-4ecc-9b4b-2fbd0e0e28b7" LastKnownName="Evaluaties" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="c6eda99d-df39-4ecc-9b4b-2fbd0e0e28b7" name="Evaluaties" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="05532abf-d13a-4cce-84c5-1985494fd572" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="467a12c1-349d-4fcb-90c3-e41053de611b" name="Registreren van inschrijvingen (via post)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8c362088-0317-4554-af3c-d142709d7088" />
+        <subjects>
+          <subsystemMoniker Id="c97af9fe-48fa-4cd5-8d90-20b3806b9a74" LastKnownName="Ischrijvingen" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="e30749e3-45ff-4e24-81e6-61ef06eee41c" name="Plaatsen vrije dagen online" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4f970191-3103-4b25-aeee-8b31c70d5e90" />
+        <subjects>
+          <subsystemMoniker Id="da5c1f91-358a-4d7f-aea0-4960e005ca3e" LastKnownName="Conferentie organizeren" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="0c18d9ea-8e33-4faf-bf25-54c725bc1ec6" name="Schrijft zich in via internet" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b507de17-25f6-47e9-94b9-e7f27e84db4b" />
+        <suppliersInternal>
+          <dependency Id="2305dfa7-d142-4685-bb84-c356da044574">
+            <useCaseMoniker Id="6735adf5-05c8-4a63-a4fd-74368de94cbb" LastKnownName="selecteerd de conferentie" />
+            <elementDefinition Id="7e5137b3-8350-49d5-92b1-4c823765ca3b" />
+          </dependency>
+          <dependency Id="50b69700-d5fe-4313-bed5-dd05c5aacf1c">
+            <useCaseMoniker Id="79d4743b-da88-4375-9fce-bcb1899bf59e" LastKnownName="Vult de gegevens in." />
+            <elementDefinition Id="47615c1a-6a5f-4794-bf5b-32947815c909" />
+          </dependency>
+        </suppliersInternal>
+        <subjects>
+          <subsystemMoniker Id="c97af9fe-48fa-4cd5-8d90-20b3806b9a74" LastKnownName="Ischrijvingen" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="c97af9fe-48fa-4cd5-8d90-20b3806b9a74" name="Ischrijvingen" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="08b941d1-8ca5-48c9-b2df-bcf5d659d076" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="a4e17beb-5536-4d95-a51e-27b70fea8a1b" name="Legt lokal vast" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="112b9a8d-dcb4-461e-a217-ab44d49ea67e" />
+        <subjects>
+          <subsystemMoniker Id="da5c1f91-358a-4d7f-aea0-4960e005ca3e" LastKnownName="Conferentie organizeren" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="74245474-0957-4e23-9c13-12ec15357865" name="Neemt contact op met extern bedrijf" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2aacf193-7575-4c9b-8ad1-c3113f4d172e" />
+        <subjects>
+          <subsystemMoniker Id="da5c1f91-358a-4d7f-aea0-4960e005ca3e" LastKnownName="Conferentie organizeren" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="c1cf59d1-e680-4993-b67e-6322a7d3a3b8" name="Selecteerd experten" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f2cd575a-3c9a-4930-9352-5e7075ec2a51" />
+        <subjects>
+          <subsystemMoniker Id="da5c1f91-358a-4d7f-aea0-4960e005ca3e" LastKnownName="Conferentie organizeren" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="db6c03c3-5702-4020-84eb-a14926b76743" name="Maakt contract op" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="032963b2-61fc-410f-a36d-f85066cf4d9d" />
+        <subjects>
+          <subsystemMoniker Id="da5c1f91-358a-4d7f-aea0-4960e005ca3e" LastKnownName="Conferentie organizeren" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="13ed0b8a-947d-4b12-91c0-b93600b7ee1f" name="Maakt een uurregeling" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="296e467d-0d85-45c0-a93e-99015f4365d4" />
+        <subjects>
+          <subsystemMoniker Id="da5c1f91-358a-4d7f-aea0-4960e005ca3e" LastKnownName="Conferentie organizeren" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="322e7895-300d-49d1-8e54-37dc44b4d420" name="Plaats conferentie online en zorgt voor een inschrijvinsmanier" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a5cc63a4-93a5-4aaa-a65d-89718748b2ab" />
+        <subjects>
+          <subsystemMoniker Id="da5c1f91-358a-4d7f-aea0-4960e005ca3e" LastKnownName="Conferentie organizeren" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="6735adf5-05c8-4a63-a4fd-74368de94cbb" name="selecteerd de conferentie" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2b0800e0-f9a2-49fc-a579-2211e99db22f" />
+        <subjects>
+          <subsystemMoniker Id="c97af9fe-48fa-4cd5-8d90-20b3806b9a74" LastKnownName="Ischrijvingen" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="79d4743b-da88-4375-9fce-bcb1899bf59e" name="Vult de gegevens in." isAbstract="false" isLeaf="false">
+        <elementDefinition Id="264c2b06-8303-46e4-bad3-6ad0cfbea550" />
+        <subjects>
+          <subsystemMoniker Id="c97af9fe-48fa-4cd5-8d90-20b3806b9a74" LastKnownName="Ischrijvingen" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="bf66d4e2-1a7c-4368-bf05-b88b21adac19" name="Verzamelt de evaluaties" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="18ce446c-3520-4959-b9c1-4384818e07b8" />
+        <subjects>
+          <subsystemMoniker Id="c6eda99d-df39-4ecc-9b4b-2fbd0e0e28b7" LastKnownName="Evaluaties" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="760d3900-1bb3-4e1d-bffc-bcb54a2e2a8a" name="Vult de gegevens in het systeem" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="10f343eb-3f2a-4c09-a987-fc5dd4be74a9" />
+        <subjects>
+          <subsystemMoniker Id="c6eda99d-df39-4ecc-9b4b-2fbd0e0e28b7" LastKnownName="Evaluaties" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="6406cfd3-fbef-48ca-b183-1b9ba18095d7" name="Berekend de uitslag" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="36f77799-42fc-40f2-96c8-d5abe89ccec6" />
+        <subjects>
+          <subsystemMoniker Id="c6eda99d-df39-4ecc-9b4b-2fbd0e0e28b7" LastKnownName="Evaluaties" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="d6c87d8c-5e4b-4e9b-a36b-d86e34c29e48" name="ConferentieSysteemULM">
+    <elementDefinition Id="d2edd9a1-867e-487a-8655-f10e1e163c4c" />
+    <profileInstances>
+      <packageHasProfileInstances Id="494e0a4b-bcc6-460b-8138-5e167739ed02">
+        <profileInstance Id="2de265fb-414e-4834-93f2-4e6bfb160a27" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="c2d4a02f-f5c1-421f-9608-a1bdaa72fb52">
+        <profileInstance Id="4981eb45-5395-4b6e-a932-a27b68537707" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="d15c5ecd-e68d-4ac0-b496-3965879a01dd">
+        <profileInstance Id="92429775-b98f-4971-9047-efdd5cc51faa" name="TextTemplateBindings">
+          <elementDefinition Id="c5584568-23ec-4412-b38a-5c04588a2549" />
+        </profileInstance>
+        <elementDefinition Id="31fe9c2b-4d6f-4a39-8948-fb49f9de683e" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

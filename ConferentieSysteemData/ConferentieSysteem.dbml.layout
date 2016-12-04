@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 30.25, 13.875" name="ConferentieSysteem">
+  <DataContextMoniker Name="/ConferentieSysteemDataContext" />
+  <nestedChildShapes>
+    <classShape Id="090fdeae-1a3e-42dc-ba8f-4645c4401ef5" absoluteBounds="28, 8.125, 2, 2.3478011067708344">
+      <DataClassMoniker Name="/ConferentieSysteemDataContext/Sessie" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4baf0ddb-00cd-4f49-94c7-073144e06178" absoluteBounds="28.015, 8.585, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="950c24a7-4a0c-4e9b-bbd7-aab3caaed850" absoluteBounds="6.25, 6.5, 2, 2.5401025390625005">
+      <DataClassMoniker Name="/ConferentieSysteemDataContext/Bedrijf" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f182ed3b-5d0b-4c07-ae27-48d8573bc022" absoluteBounds="6.265, 6.96, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2516d424-9f93-4a9a-abee-2ae1f85127c2" absoluteBounds="25, 3.875, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/ConferentieSysteemDataContext/Betaald" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5cd2556a-05a2-4c9b-8663-ffcd747e2b15" absoluteBounds="25.015, 4.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3a1135df-0a64-4bca-b9ae-57815cfd676b" absoluteBounds="11.75, 11.375, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/ConferentieSysteemDataContext/Conferentie" />
+      <nestedChildShapes>
+        <elementListCompartment Id="89a128c4-cd26-4f8a-a1ab-417195b76105" absoluteBounds="11.765, 11.835, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f10c0572-702d-4cd1-9710-bac68bc34863" absoluteBounds="26, 12, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/ConferentieSysteemDataContext/ConferentieDag" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1878c8a3-2306-4173-a90c-d6dab76c2f27" absoluteBounds="26.015, 12.46, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8f092b2e-5e0f-4696-bd33-721abd6ae35b" absoluteBounds="10.125, 4, 2, 1.3862939453125003">
+      <DataClassMoniker Name="/ConferentieSysteemDataContext/Expertise" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c5cee16a-bd40-4b6a-84bb-8bbcc1952ab1" absoluteBounds="10.14, 4.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b26f23c4-6ed4-4b39-8269-074c534e315f" absoluteBounds="12.625, 4.25, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/ConferentieSysteemDataContext/ExpertiseDomein" />
+      <nestedChildShapes>
+        <elementListCompartment Id="79186edc-3c78-43af-ae73-b523ddde4f49" absoluteBounds="12.64, 4.71, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="36d70057-b4b1-4bac-9e1f-1f6c2afe52b1" absoluteBounds="19.125, 3.875, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/ConferentieSysteemDataContext/Factuur" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2897fe1d-f175-4dcd-8c62-d4066902ac34" absoluteBounds="19.14, 4.335, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="237a5045-b728-41aa-8bfa-9951b8a37f41" absoluteBounds="7, 3.5, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/ConferentieSysteemDataContext/Functie" />
+      <nestedChildShapes>
+        <elementListCompartment Id="180cb90f-2a41-4858-bb08-edd8d6377cb1" absoluteBounds="7.015, 3.9600000000000009, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="61ce4040-bbe3-4b1e-8ae5-f9e5b3009da6" absoluteBounds="3.5, 7, 2, 1.5785953776041675">
+      <DataClassMoniker Name="/ConferentieSysteemDataContext/Gemeente" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a267ad8a-dc87-4c23-860a-40f3e18ba617" absoluteBounds="3.515, 7.46, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9a217d8b-16aa-44f7-93d6-56357ce6cb88" absoluteBounds="23.125, 10.25, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/ConferentieSysteemDataContext/InschrijvingConferntieDagLink" />
+      <nestedChildShapes>
+        <elementListCompartment Id="154730a6-7241-4925-93c1-23468655bdb1" absoluteBounds="23.14, 10.71, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="91c708be-a350-4f68-8063-c05ec7e06162" absoluteBounds="25.25, 6.75, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/ConferentieSysteemDataContext/Lokaal" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a43b5554-4112-4756-aeb5-2d926e645408" absoluteBounds="25.265, 7.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fb2ad443-4e68-4aad-82d9-0a51b38eab72" absoluteBounds="11.75, 8.625, 2, 1.9631982421874987">
+      <DataClassMoniker Name="/ConferentieSysteemDataContext/Overeenkomst" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0f2c8603-a5dc-49e7-898c-3b8323ad1507" absoluteBounds="11.765, 9.085, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1aa33cfd-4029-48fa-8606-57f4426ca6d0" absoluteBounds="25.25, 8.625, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/ConferentieSysteemDataContext/OvereenkomstExpertiseDomeinLink" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9381965d-1671-414d-8159-e587aa2ca4d1" absoluteBounds="25.265, 9.085, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="56ed21bf-3586-410e-b717-5978338c4e16" absoluteBounds="9, 6.125, 2, 3.3093082682291675">
+      <DataClassMoniker Name="/ConferentieSysteemDataContext/Persoon" />
+      <nestedChildShapes>
+        <elementListCompartment Id="58a903c9-935d-4475-92a0-81a45354eacf" absoluteBounds="9.015, 6.585, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d1d2e61f-52c9-4a53-b6da-21c0dff16c2a" absoluteBounds="12.125, 6.875, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/ConferentieSysteemDataContext/PersoonExpertiseDomeinLink" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cce76691-ce97-4141-ad05-90c7cbb52262" absoluteBounds="12.14, 7.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f9727284-3dfc-4270-ad9d-783365e5b78e" absoluteBounds="0.75, 7.125, 2, 1.1939925130208327">
+      <DataClassMoniker Name="/ConferentieSysteemDataContext/Provincie" />
+      <nestedChildShapes>
+        <elementListCompartment Id="159344aa-999c-4606-a1b5-3577ae10189e" absoluteBounds="0.765, 7.585, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(27.625 : 12); (27.625 : 10.1771468098958); (28 : 10.1771468098958)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/ConferentieSysteemDataContext/ConferentieDag/ConferentieDag_Sessie" />
+      <nodes>
+        <classShapeMoniker Id="f10c0572-702d-4cd1-9710-bac68bc34863" />
+        <classShapeMoniker Id="090fdeae-1a3e-42dc-ba8f-4645c4401ef5" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(13.75 : 12.7652498372396); (26 : 12.7652498372396)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/ConferentieSysteemDataContext/Conferentie/Conferentie_ConferentieDag" />
+      <nodes>
+        <classShapeMoniker Id="3a1135df-0a64-4bca-b9ae-57815cfd676b" />
+        <classShapeMoniker Id="f10c0572-702d-4cd1-9710-bac68bc34863" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14.625 : 5.80187968659856); (15.0267156910056 : 6.20359537760417); (16.6666666666667 : 6.20359537760417 : JumpStart); (16.8333333333333 : 6.20359537760417 : JumpEnd); (29 : 6.20359537760417); (29 : 8.125)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ConferentieSysteemDataContext/ExpertiseDomein/ExpertiseDomein_Sessie" />
+      <nodes>
+        <classShapeMoniker Id="b26f23c4-6ed4-4b39-8269-074c534e315f" />
+        <classShapeMoniker Id="090fdeae-1a3e-42dc-ba8f-4645c4401ef5" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.5579914869842 : 5.3862939453125); (11.5579914869842 : 5.6362939453125); (12.375 : 5.6362939453125); (12.375 : 5.03929768880208); (12.625 : 5.03929768880208)]" manuallyRouted="true" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/ConferentieSysteemDataContext/Expertise/Expertise_ExpertiseDomein" />
+      <nodes>
+        <classShapeMoniker Id="8f092b2e-5e0f-4696-bd33-721abd6ae35b" />
+        <classShapeMoniker Id="b26f23c4-6ed4-4b39-8269-074c534e315f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(21.125 : 4.56814697265625); (25 : 4.56814697265625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/ConferentieSysteemDataContext/Factuur/Factuur_Betaald" />
+      <nodes>
+        <classShapeMoniker Id="36d70057-b4b1-4bac-9e1f-1f6c2afe52b1" />
+        <classShapeMoniker Id="2516d424-9f93-4a9a-abee-2ae1f85127c2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 7.78929768880208); (6.25 : 7.78929768880208)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/ConferentieSysteemDataContext/Gemeente/Gemeente_Bedrijf" />
+      <nodes>
+        <classShapeMoniker Id="61ce4040-bbe3-4b1e-8ae5-f9e5b3009da6" />
+        <classShapeMoniker Id="950c24a7-4a0c-4e9b-bbd7-aab3caaed850" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(26.6261097535848 : 12); (26.6261097535848 : 10.8469962565104); (25.125 : 10.8469962565104)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/ConferentieSysteemDataContext/ConferentieDag/ConferentieDag_InschrijvingConferntieDagLink" />
+      <nodes>
+        <classShapeMoniker Id="f10c0572-702d-4cd1-9710-bac68bc34863" />
+        <classShapeMoniker Id="9a217d8b-16aa-44f7-93d6-56357ce6cb88" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(27.25 : 7.34699625651042); (28.3854141666667 : 7.34699625651042 : JumpStart); (28.5520808333333 : 7.34699625651042 : JumpEnd); (29 : 7.34699625651042); (29 : 8.125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/ConferentieSysteemDataContext/Lokaal/Lokaal_Sessie" />
+      <nodes>
+        <classShapeMoniker Id="91c708be-a350-4f68-8063-c05ec7e06162" />
+        <classShapeMoniker Id="090fdeae-1a3e-42dc-ba8f-4645c4401ef5" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14.599499613131 : 5.82859537760417); (15 : 6.22909576447316); (15 : 9.29734487760417); (16.6666666666667 : 9.29734487760417 : JumpStart); (16.8333333333333 : 9.29734487760417 : JumpEnd); (25.25 : 9.29734487760417)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ConferentieSysteemDataContext/ExpertiseDomein/ExpertiseDomein_OvereenkomstExpertiseDomeinLink" />
+      <nodes>
+        <classShapeMoniker Id="b26f23c4-6ed4-4b39-8269-074c534e315f" />
+        <classShapeMoniker Id="1aa33cfd-4029-48fa-8606-57f4426ca6d0" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(13.75 : 8.97402155989584); (14.9166666666667 : 8.97402155989584 : JumpStart); (15.0833333333333 : 8.97402155989584 : JumpEnd); (16.6666666666667 : 8.97402155989584 : JumpStart); (16.8333333333333 : 8.97402155989584 : JumpEnd); (25.25 : 8.97402155989584)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ConferentieSysteemDataContext/Overeenkomst/Overeenkomst_OvereenkomstExpertiseDomeinLink" />
+      <nodes>
+        <classShapeMoniker Id="fb2ad443-4e68-4aad-82d9-0a51b38eab72" />
+        <classShapeMoniker Id="1aa33cfd-4029-48fa-8606-57f4426ca6d0" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11 : 6.44554768880208); (13.2916666666667 : 6.44554768880208 : JumpStart); (13.4583333333333 : 6.44554768880208 : JumpEnd); (14.9166666666667 : 6.44554768880208 : JumpStart); (15.0833333333333 : 6.44554768880208 : JumpEnd); (16.6666666666667 : 6.44554768880208 : JumpStart); (16.8333333333333 : 6.44554768880208 : JumpEnd); (28.4687475 : 6.44554768880208); (28.4687475 : 8.125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ConferentieSysteemDataContext/Persoon/Persoon_Sessie" />
+      <nodes>
+        <classShapeMoniker Id="56ed21bf-3586-410e-b717-5978338c4e16" />
+        <classShapeMoniker Id="090fdeae-1a3e-42dc-ba8f-4645c4401ef5" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(10 : 9.43430826822917); (10 : 12.4527498372396); (11.75 : 12.4527498372396)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/ConferentieSysteemDataContext/Persoon/Persoon_Conferentie" />
+      <nodes>
+        <classShapeMoniker Id="56ed21bf-3586-410e-b717-5978338c4e16" />
+        <classShapeMoniker Id="3a1135df-0a64-4bca-b9ae-57815cfd676b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11 : 9.02965413411458); (11.75 : 9.02965413411458)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/ConferentieSysteemDataContext/Persoon/Persoon_Overeenkomst" />
+      <nodes>
+        <classShapeMoniker Id="56ed21bf-3586-410e-b717-5978338c4e16" />
+        <classShapeMoniker Id="fb2ad443-4e68-4aad-82d9-0a51b38eab72" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11 : 8.76482706705729); (11.75 : 8.76482706705729)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/ConferentieSysteemDataContext/Persoon/Persoon_Overeenkomst1" />
+      <nodes>
+        <classShapeMoniker Id="56ed21bf-3586-410e-b717-5978338c4e16" />
+        <classShapeMoniker Id="fb2ad443-4e68-4aad-82d9-0a51b38eab72" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 7.77005126953125); (9 : 7.77005126953125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/ConferentieSysteemDataContext/Bedrijf/Bedrijf_Persoon" />
+      <nodes>
+        <classShapeMoniker Id="950c24a7-4a0c-4e9b-bbd7-aab3caaed850" />
+        <classShapeMoniker Id="56ed21bf-3586-410e-b717-5978338c4e16" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.625 : 4.69399251302083); (8.625 : 6.28125); (9 : 6.28125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/ConferentieSysteemDataContext/Functie/Functie_Persoon" />
+      <nodes>
+        <classShapeMoniker Id="237a5045-b728-41aa-8bfa-9951b8a37f41" />
+        <classShapeMoniker Id="56ed21bf-3586-410e-b717-5978338c4e16" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.5 : 8.57859537760417); (4.5 : 9.26845540364583); (9 : 9.26845540364583)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/ConferentieSysteemDataContext/Gemeente/Gemeente_Persoon" />
+      <nodes>
+        <classShapeMoniker Id="61ce4040-bbe3-4b1e-8ae5-f9e5b3009da6" />
+        <classShapeMoniker Id="56ed21bf-3586-410e-b717-5978338c4e16" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11 : 7.47199625651042); (12.125 : 7.47199625651042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/ConferentieSysteemDataContext/Persoon/Persoon_PersoonExpertiseDomeinLink" />
+      <nodes>
+        <classShapeMoniker Id="56ed21bf-3586-410e-b717-5978338c4e16" />
+        <classShapeMoniker Id="d1d2e61f-52c9-4a53-b6da-21c0dff16c2a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(13.375 : 5.82859537760417); (13.375 : 6.875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/ConferentieSysteemDataContext/ExpertiseDomein/ExpertiseDomein_PersoonExpertiseDomeinLink" />
+      <nodes>
+        <classShapeMoniker Id="b26f23c4-6ed4-4b39-8269-074c534e315f" />
+        <classShapeMoniker Id="d1d2e61f-52c9-4a53-b6da-21c0dff16c2a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 7.72199625651042); (3.5 : 7.72199625651042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/ConferentieSysteemDataContext/Provincie/Provincie_Gemeente" />
+      <nodes>
+        <classShapeMoniker Id="f9727284-3dfc-4270-ad9d-783365e5b78e" />
+        <classShapeMoniker Id="61ce4040-bbe3-4b1e-8ae5-f9e5b3009da6" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="2b118f90-d474-4b3d-bc9c-94ff19c97bec" absoluteBounds="15.75, 3.75, 2, 1.3862939453125">
+      <DataClassMoniker Name="/ConferentieSysteemDataContext/Inschrijving" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e975490a-6783-4c7d-bb76-13e984e24061" absoluteBounds="15.765, 4.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(17.75 : 4.50564697265625); (19.125 : 4.50564697265625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/ConferentieSysteemDataContext/Inschrijving/Inschrijving_Factuur" />
+      <nodes>
+        <classShapeMoniker Id="2b118f90-d474-4b3d-bc9c-94ff19c97bec" />
+        <classShapeMoniker Id="36d70057-b4b1-4bac-9e1f-1f6c2afe52b1" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(16.75 : 5.1362939453125); (16.75 : 10.8469962565104); (23.125 : 10.8469962565104)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/ConferentieSysteemDataContext/Inschrijving/Inschrijving_InschrijvingConferntieDagLink" />
+      <nodes>
+        <classShapeMoniker Id="2b118f90-d474-4b3d-bc9c-94ff19c97bec" />
+        <classShapeMoniker Id="9a217d8b-16aa-44f7-93d6-56357ce6cb88" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9.5625 : 6.125); (9.5625 : 3.84375); (15.75 : 3.84375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/ConferentieSysteemDataContext/Persoon/Persoon_Inschrijving" />
+      <nodes>
+        <classShapeMoniker Id="56ed21bf-3586-410e-b717-5978338c4e16" />
+        <classShapeMoniker Id="2b118f90-d474-4b3d-bc9c-94ff19c97bec" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="ecef2e85-77e6-4cc0-bd17-159465d23020" absoluteBounds="19.25, 6.75, 2, 1.9631982421875">
+      <DataClassMoniker Name="/ConferentieSysteemDataContext/Evaluatie" />
+      <nestedChildShapes>
+        <elementListCompartment Id="26683498-2d5e-4d66-9411-6da02d7ba3e1" absoluteBounds="19.265, 7.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(11 : 8.34699625651042); (14.9166666666667 : 8.34699625651042 : JumpStart); (15.0833333333333 : 8.34699625651042 : JumpEnd); (16.6666666666667 : 8.34699625651042 : JumpStart); (16.8333333333333 : 8.34699625651042 : JumpEnd); (19.25 : 8.34699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ConferentieSysteemDataContext/Persoon/Persoon_Evaluatie" />
+      <nodes>
+        <classShapeMoniker Id="56ed21bf-3586-410e-b717-5978338c4e16" />
+        <classShapeMoniker Id="ecef2e85-77e6-4cc0-bd17-159465d23020" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11 : 8.17674438476563); (14.9166666666667 : 8.17674438476563 : JumpStart); (15.0833333333333 : 8.17674438476563 : JumpEnd); (16.6666666666667 : 8.17674438476563 : JumpStart); (16.8333333333333 : 8.17674438476563 : JumpEnd); (19.25 : 8.17674438476563)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ConferentieSysteemDataContext/Persoon/Persoon_Evaluatie1" />
+      <nodes>
+        <classShapeMoniker Id="56ed21bf-3586-410e-b717-5978338c4e16" />
+        <classShapeMoniker Id="ecef2e85-77e6-4cc0-bd17-159465d23020" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(28 : 8.34375); (21.25 : 8.34375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ConferentieSysteemDataContext/Sessie/Sessie_Evaluatie" />
+      <nodes>
+        <classShapeMoniker Id="090fdeae-1a3e-42dc-ba8f-4645c4401ef5" />
+        <classShapeMoniker Id="ecef2e85-77e6-4cc0-bd17-159465d23020" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

@@ -1,0 +1,4209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="d2edd9a1-867e-487a-8655-f10e1e163c4c"
+  name="ConferentieSysteemULM" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="3b3b89a4-7939-471f-bcac-8914f4e21b34">
+      <body>Hein Pauwelyn
+19/02/2014
+
+Conferentie systeem (eindwerk)
+Class diagram</body>
+    </comment>
+    <comment
+      Id="c21a475f-0189-4820-bb24-8aaffd99114f">
+      <body>Hein Pauwelyn
+16/03/2014
+
+Conferentie Systeem (eindwerk)
+Use case diagram</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="31fe9c2b-4d6f-4a39-8948-fb49f9de683e">
+      <profileInstance
+        Id="c5584568-23ec-4412-b38a-5c04588a2549"
+        name="TextTemplateBindings" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="326daf66-50dc-44a3-aef0-1e1d40f4ba48"
+        name="Conferentie"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="2a6eac62-d52a-42cd-891d-573e0586c568"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="db7765a3-06a2-4352-a658-f14372aba227"
+              LastKnownName="Conferentievoorzitter"
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="653174a8-4da5-4e63-84e9-b5958ceb566a"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="252885ed-a49f-4027-a5e6-30e85137e44e"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="7ec9f262-f5e9-44f4-a031-1feb66ffdc0f"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3dca33da-9e18-4aae-8508-51193a2369ce"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="9f529ae2-fb27-4bb7-88d2-3d79104ab85c"
+            isDerived="false"
+            sourceEndRoleName="Conferentie wordt op een bep. dag gegeven"
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="e4342ee9-68d6-4715-bd62-88e9be93e79f"
+              LastKnownName="Dag"
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8025a564-f5c0-4607-927d-1b05c1f4c977"
+                  name="Conferentie wordt op een bep. dag gegeven"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="8491c486-9ab6-4660-b830-6ea9a15131bc"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="dabb16a9-edf4-4fbb-ac73-11eb99c0ba2e"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f2081916-f98e-4557-9240-5bc35c8170cc"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="3e569956-4d89-448c-b362-bf025840c4cf"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="721c7c40-68e5-41c3-ad88-b98734a620bb"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="94374135-d620-4c3b-9245-70e199b39699"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName="Confertrentie wordt opgespitst in conferentie dagen"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="7e7cc6d7-2744-4b60-9f35-5a061df93e5c"
+              LastKnownName="Conferentie dag"
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ca6cc10d-d3da-4b17-b352-9ea0721ad407"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="ef4876a7-ad73-435d-9f6f-14b0bfc43bed"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="6a18e846-d94d-4305-91a5-e90678ae1ec4"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="01645d8c-1621-455c-9a48-79890fd03919"
+                  name="Confertrentie wordt opgespitst in conferentie dagen"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="49e5246c-642f-4caf-bf0b-36ac2653f141"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="b1bb63f0-5a1c-4e79-8883-1c8abe589929"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="26b1f7eb-7aa2-4221-bea3-d581c2b587b2"
+            name="Naam"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="1a8869e4-4b0a-4ea8-8958-8191765b068f"
+            name="Beschrijving"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="e4342ee9-68d6-4715-bd62-88e9be93e79f"
+        name="Dag"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="db7765a3-06a2-4352-a658-f14372aba227"
+        name="Conferentievoorzitter"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="54ac8d1d-bd0c-4edc-9901-4db73e8d0bc1">
+            <interfaceMoniker
+              Id="add542ba-149b-4ba7-a00b-b761bcf9f883"
+              LastKnownName="I naambaar"
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="b13d488e-e086-42c1-8371-3483ded03b11"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName="Nodigen uit"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="bfc0f30b-b6de-437a-a086-047f0deda781"
+              LastKnownName="Expert"
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+            <description>Nodigen uit</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="779b9102-81c2-40b4-ab44-5dc7e8115bcb"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="cf0efc58-42ab-4880-aeb0-b183e9741523"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="9146c375-d19d-4b55-b285-389a433669aa"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f76fb871-38d3-4d69-9d96-40a44d1e284e"
+                  name="Nodigen uit"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="5b30ff12-fede-4798-bf64-4e93bace8e84"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="ec0b2e7e-d8b7-406b-94ac-e52592f1ac3e"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="0ee8a4c7-27b2-4a0a-8fad-67b5a7dc7c42"
+        name="Overeenkomst"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="23a03081-b108-4bce-a918-276cb31447ea"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName="Conferentievoorzitteer sluit een overeenkomst aan"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="db7765a3-06a2-4352-a658-f14372aba227"
+              LastKnownName="Conferentievoorzitter"
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2d56a565-e3fa-4062-bba1-3bd48d594217"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="1b6080d5-ae97-457b-911f-1dea7f027ef5"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="04b3dbd7-a229-495e-be0d-99c26fd00317"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ab343130-47a8-412c-9e6e-154183b346c0"
+                  name="Conferentievoorzitteer sluit een overeenkomst aan"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="aab44b0b-aaf1-43ab-87d4-227986b76147"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="c75797bb-2546-44a5-a13f-f19eecadf019"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="b9fe0117-8ca9-4b51-80c8-05efa68d2f20"
+            isDerived="false"
+            sourceEndRoleName="Expert en voorzitter"
+            targetEndRoleName="maken een overeenkomst"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="befef03f-732e-42a1-a120-da39b818a5b9"
+              LastKnownName="Persoon"
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="240c7ce1-4114-4544-a918-86a89ff4aa8e"
+                  name="Expert en voorzitter"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="ee0e2212-269d-48c7-ae0e-1955d4eb54a2"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="863356df-202b-4c44-b6bd-d8b6b40775fe"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="11326c09-5681-4b67-a488-667f098f51d9"
+                  name="maken een overeenkomst"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="03f6aa42-65a1-4164-87c3-fd0ec967e1a5"
+                      name="Lower"
+                      value="2" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="e3704a31-2a93-4b84-aed4-35253ccfb348"
+                      name="Upper"
+                      value="2" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="7d002cdf-72fc-4fa7-9103-6609cc066252"
+            name="Begin datum"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="e5462c14-d953-4639-8a86-0dbc8ada3ab0"
+            name="Looptijd"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="88663a03-41d1-48ec-816c-ff2b5cdf7aca"
+            name="eind datum"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="704ac7b8-78f1-42e2-a924-9ee6788c96cd"
+        name="Expertise"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="d0cc0317-5e60-4d16-a39b-648db414fe32"
+            isDerived="false"
+            sourceEndRoleName="een expetiese heeft een expertiese domein"
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="ad95f7be-bea1-4a92-b89d-5a056a6225c9"
+              LastKnownName="Expertise domein"
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b61d3e4a-46ec-4f55-aa44-3230bb9d3454"
+                  name="een expetiese heeft een expertiese domein"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="776f9203-876d-4abd-9151-839949f97232"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="9bb00253-35a0-44b6-a6e2-8370162215bc"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1abb8a86-b27e-4c1c-95fd-741e5a271e5c"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="51323e75-2292-42a2-bc05-91e83fd6651d"
+            name="Naam"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="bc4e12ca-0244-4d4a-9a8c-355fe6fd2bfd"
+            name="Beschrijving"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="ad95f7be-bea1-4a92-b89d-5a056a6225c9"
+        name="Expertise domein"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="c3fe8318-944c-4532-82d5-d2a7e2b33421"
+            isDerived="false"
+            sourceEndRoleName="Experten voldoen aan een aantal expertise domeienen"
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="befef03f-732e-42a1-a120-da39b818a5b9"
+              LastKnownName="Persoon"
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="867a6d11-f33b-47f8-b4b4-5d93fcb9e51e"
+                  name="Experten voldoen aan een aantal expertise domeienen"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="b2ec19e5-c144-4cab-a923-e59c2ec209a5"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="b1fada47-de66-4140-91ba-0250f70c9125"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d1527565-993e-4828-8034-1a94424e9983"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="f70ffe70-ad98-41be-8626-998a4b5f145d"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="08af0abc-30b4-4209-a64f-42522841e495"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="54dd4450-7731-4728-8aac-97dcae4f6959"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName="In een sessie worden bepaalde domeinen aangehaald"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="3e7b55b8-dc62-4b50-bde7-e5188688d230"
+              LastKnownName="Sessie"
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cf8fcb15-9969-44fd-b278-fcdb50fa3d8f"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="6af55a3b-b08a-474b-ae18-0f33a33d9155"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="c6a73f62-fa35-43fa-a56d-839211446926"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fb1251f3-908a-4a0c-bbf0-936a0680763d"
+                  name="In een sessie worden bepaalde domeinen aangehaald"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="f5a79a51-1eda-4a1b-8da4-a4f1116532f5"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="5ca162d6-b1a2-45a2-89aa-5a57e7d203b6"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="fc42960e-4ffa-4c6b-91db-439eabe00511"
+            name="Naam"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="e8b15a8d-7698-4b5a-b02e-c0dc279ce922"
+            name="Beschrijving"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="bfc0f30b-b6de-437a-a086-047f0deda781"
+        name="Expert"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="cf5ab938-9ffd-4ab4-b8e7-dc2f6b87df1b">
+            <interfaceMoniker
+              Id="add542ba-149b-4ba7-a00b-b761bcf9f883"
+              LastKnownName="I naambaar"
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+          </interfaceRealization>
+          <interfaceRealization
+            Id="0efacca3-3501-49e6-a84c-13b5ca9f40fa">
+            <interfaceMoniker
+              Id="c72ee931-3cae-4d1d-81b4-5d4ab9411edb"
+              LastKnownName="I contacteerbaar"
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="86ac36eb-5e95-4e16-8614-b98356a8344b"
+            isDerived="false"
+            sourceEndRoleName="Expeten doen een expertise"
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="704ac7b8-78f1-42e2-a924-9ee6788c96cd"
+              LastKnownName="Expertise"
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="44cb3aa1-6a43-472e-a285-e38dc672f074"
+                  name="Expeten doen een expertise"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="5823161e-e6d9-4a9f-b04b-433e1f68b085"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="02341e86-f405-4195-882f-5aa60aeb100d"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f2bf7347-94df-4540-b6cc-fd8402d678d8"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="68e89e16-9645-480e-9497-d00f34ef4cbc"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="f901120b-ebe6-4d6b-9eec-544dd4eed958"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="90e3f650-c8b4-4c5d-8ca5-eb317b021eec"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName="een exprert is aangesloten bij een extern bedrijf"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="fc289bc8-f983-4e13-86a3-b4e66ff5f125"
+              LastKnownName="Extern bedrijf"
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6bd831d6-9c10-4288-9be9-53e141fdb376"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="e7fe5709-3979-480e-b48c-7c30df429cc8"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="a8ba54c7-856b-4cf8-b962-f984b2c85353"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9bed3da6-a054-41e2-ba53-babd586a6cd3"
+                  name="een exprert is aangesloten bij een extern bedrijf"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="b89efb89-e170-4466-b3c2-1542c58ba8dd"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName="Experten geven uitleg over een bepaald thema"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="325572ee-d63f-4d6e-b89d-82bce8359ceb"
+              LastKnownName="Thema"
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4487cb12-7026-4745-a215-a48ce6ce0bd1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="74f8a02f-3095-4e34-89eb-92932c67ab01"
+                  name="Experten geven uitleg over een bepaald thema"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="67360485-873b-4981-8822-b2d4c716df1c"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="295ed33f-511f-4979-b47f-acf94675e6e2"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="7e7cc6d7-2744-4b60-9f35-5a061df93e5c"
+        name="Conferentie dag"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="49bf7e92-c97a-47ee-8b0e-e845a981cb62"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName="op een dag worden verschillende sessies gegeven"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="3e7b55b8-dc62-4b50-bde7-e5188688d230"
+              LastKnownName="Sessie"
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f55c655c-8285-44b4-87c2-6ea66b246452"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="b139679f-9ecd-4328-bf9f-bcfa5d344789"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="824d59f4-7e34-4c68-969e-3db5fade2e02"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="33707f1d-8233-426c-9959-3a91d84bcacc"
+                  name="op een dag worden verschillende sessies gegeven"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="9c308d60-c58d-4cea-9ab9-7a06ce6cb161"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="791517f4-1fe9-4699-bb5f-d90bbd747521"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="4466d122-29ee-441e-b3b3-e9ad330ec811"
+            name="Datum"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="2cf1835a-3d38-4008-be06-9f142d8002fb"
+            name="Inschrijvingsgeld"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="3e7b55b8-dc62-4b50-bde7-e5188688d230"
+        name="Sessie"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="c7409368-af24-479d-b051-f4285128f78f"
+            isDerived="false"
+            sourceEndRoleName="Sessie gaat over thema"
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="325572ee-d63f-4d6e-b89d-82bce8359ceb"
+              LastKnownName="Thema"
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fd267edd-e053-458e-a867-80680ecf1116"
+                  name="Sessie gaat over thema"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="16f8809c-da04-44c6-b1c3-8d61fc8d90a0"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="46b127f4-4b37-4fe7-8908-0b8c9e0f3b3a"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="13cfb319-e09a-4f24-a890-c8de22964778"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="1862c6e9-71c9-4f0b-80a2-bad094c6ba55"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="7f2c9441-3159-4fe1-ab2e-d55c5491bc54"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="8fbe04ff-c615-427f-8c5e-2eeaad0ae6f9"
+            isDerived="false"
+            sourceEndRoleName="Deelnemers doen mee aan een sessie"
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="b34657e1-3144-49ba-857c-45e413a1fd60"
+              LastKnownName="Deelnemer"
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c70cbb70-a221-4bcc-9869-73760822224f"
+                  name="Deelnemers doen mee aan een sessie"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="0341a78a-fe7e-4a0a-86f8-bfec73a0ddf0"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="5e4ca61d-18c9-4ba4-8d11-2325c9571cbb"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7280d149-824c-43ab-aeac-21c77d8eb2a1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="7eb47837-a3d3-4d43-85d2-51b2384dff49"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="c9af904c-7ac7-4a25-a914-d47a79366e40"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="bfea1d4f-1a41-4347-a960-21360bd772de"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="89aa9ca0-cd1b-4d97-8a15-28f0a5bfff7f"
+              LastKnownName="Boekwerk"
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="36f3045e-a81b-4607-8ef5-93dfcc5d3280"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="bfb5f23a-5d2e-458b-953d-4485f87cb85b"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="5154be65-6c4d-4838-904e-921889b36f06"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1d640976-1dca-42ef-86d6-d44d0279c33f"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="e53a9b5e-8cb4-4485-873d-1db19b44963d"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="6e3bb7ad-e696-484f-8a7c-4abb353e8fe5"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="aa7d0677-6263-44db-9909-69e755a12bbc"
+            isDerived="false"
+            sourceEndRoleName="Bij iedere sesie hoort een evaluatie"
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="2711c664-4581-4e6b-9cd2-2481a783c5d2"
+              LastKnownName="Evaluatie"
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="321268ec-1918-4219-9861-327c94e792d8"
+                  name="Bij iedere sesie hoort een evaluatie"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7a7a2324-bd3b-41f4-8b9b-c17b4ba9d8fe"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="845387b9-d0b5-4c27-83aa-5d950309149d"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="b2086b81-f1a2-48f4-9792-152add34f248"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="2642b1ed-1b50-4c48-9477-9534dfe3c7b8"
+            name="Datum"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="b16f842e-fdf4-44c6-92b7-37cc3a0b0de3"
+            name="Aanvang uur"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="51cc0ae9-c1c0-4aeb-81e8-e6dcea68f2fc"
+            name="Eind uur"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="f046ea6d-c60b-4eb2-b6ba-079880ef46fb"
+            name="IsKeynote"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="325572ee-d63f-4d6e-b89d-82bce8359ceb"
+        name="Thema"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="6a49ef5b-7640-4181-8fcf-dc9b62cf3964"
+            name="Naam"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="5b0edd6a-5727-4c22-94f9-3fc52ed34c9b"
+            name="Beschrijving"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="06500ec4-66d6-4b6c-859a-3886349e558d"
+        name="Dag deel"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="571b9cd3-92a2-41ed-9b59-516aeab9c091"
+            isDerived="false"
+            sourceEndRoleName="Expet is aanwezig op een bepaald dagdeel"
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="bfc0f30b-b6de-437a-a086-047f0deda781"
+              LastKnownName="Expert"
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="47d17437-2d2e-4678-aac8-4cca248122b2"
+                  name="Expet is aanwezig op een bepaald dagdeel"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="8c08f5c1-dc07-406a-86bf-831b3760196b"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="8edc7014-cbca-48ff-98d6-55ab0bc44dd1"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2fedfab4-044e-4298-ba77-80e739dc9725"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="af2d8fdd-aa1a-4952-9190-88fb47b2961b"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="3e0ba73e-c54a-468d-95cf-3c395513e4f4"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="8797504c-d389-438d-ade5-495c30f02d4f"
+            name="Voormiddag" />
+          <enumerationLiteral
+            Id="6cfbfbb0-07d2-4e0e-a0a6-09b1e4b9055e"
+            name="Namiddag" />
+        </ownedLiterals>
+      </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="2afc4464-576c-4b1c-a810-2fc340924af8"
+        name="Keynote"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="08995ccd-2bfd-48ad-868a-9771cf98c231"
+            isSubstitutable="false">
+            <classMoniker
+              Id="3e7b55b8-dc62-4b50-bde7-e5188688d230"
+              LastKnownName="Sessie"
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="b34657e1-3144-49ba-857c-45e413a1fd60"
+        name="Deelnemer"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="a830b91d-40d3-4137-8b9c-bd6cc9a40d28">
+            <interfaceMoniker
+              Id="add542ba-149b-4ba7-a00b-b761bcf9f883"
+              LastKnownName="I naambaar"
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+          </interfaceRealization>
+          <interfaceRealization
+            Id="4839cc2e-9335-44e1-aec8-5b074b7c745f">
+            <interfaceMoniker
+              Id="c72ee931-3cae-4d1d-81b4-5d4ab9411edb"
+              LastKnownName="I contacteerbaar"
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="5e149d0c-3ad4-4c42-ac3d-4632ae7ceb64"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName="Deelnemers vullen evalauties in"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="2711c664-4581-4e6b-9cd2-2481a783c5d2"
+              LastKnownName="Evaluatie"
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5da91301-18cf-49b8-a77e-6f22da38f4b1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="eb40648c-ccd1-4c17-bef4-d0bcc208fa55"
+                  name="Deelnemers vullen evalauties in"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="bbd3797b-9474-4a6f-a51a-5c8e06156037"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="bad2c245-f856-48fa-baad-180fd2ad68dc"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="add542ba-149b-4ba7-a00b-b761bcf9f883"
+        name="I naambaar"
+        isAbstract="false"
+        isLeaf="false">
+        <ownedAttributes>
+          <property
+            Id="8a963998-4fa2-4fc9-85dc-a426cd34a3b8"
+            name="Achternaam"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="2e6da991-4c9d-4715-b171-cc653210c3d4"
+            name="Voornaam"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributes>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="89aa9ca0-cd1b-4d97-8a15-28f0a5bfff7f"
+        name="Boekwerk"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="6e64142a-4bf3-42bb-8761-c812d43a25c9"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="e49051bc-b5d1-427e-9e50-40d56edbbbd0"
+              LastKnownName="Inschrijving"
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cabb5f61-0e96-4438-9972-b1aa5c3d6a03"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c24f46e1-2d56-4b2b-94d3-9239772ec6e9"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="df9a9e39-e1a0-4b24-893e-a7091b7a587d"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="09ea0175-b813-45f6-8129-56956022b848"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="2711c664-4581-4e6b-9cd2-2481a783c5d2"
+        name="Evaluatie"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="1b5845be-1e74-47ff-8e2a-b87f1c3e3405"
+            isDerived="false"
+            sourceEndRoleName="Evaluatie heeft vershillende vragen"
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="12ec44c5-cd65-434c-891d-69f67e2507b7"
+              LastKnownName="Vraag"
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0dcbb41f-1496-4ffc-b360-e8f73c2ce8e7"
+                  name="Evaluatie heeft vershillende vragen"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="974648c3-b4c5-4121-8261-9dac3e930764"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="063bea9e-8936-42e4-a8ea-2b8dc9d6a72a"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a7dc0d52-49b8-426f-b044-16a77da54c90"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="a71c0206-d573-40ce-8ce1-97b953e4e393"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="da5cfdc5-60df-417b-bb57-80fbe261a855"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="9679883b-863d-4db5-950b-b1ee3e8bc3d0"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName="Evaluatie gaat over een thema"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="325572ee-d63f-4d6e-b89d-82bce8359ceb"
+              LastKnownName="Thema"
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="28eec39d-8185-4fd0-803d-df68952d6b1b"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="268b2c13-544f-486b-bade-96372ba44bcf"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="44ca3123-f66c-4590-913b-f6df48368b19"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c8c9d96e-c41b-4b8e-b2d6-e1224225fd83"
+                  name="Evaluatie gaat over een thema"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="f996c379-a823-4cbf-a372-7a8ea4f048eb"
+            name="Schore"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="22024cec-f410-4b79-99b4-308cd2b196e9"
+            name="Opmerkingen"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="12ec44c5-cd65-434c-891d-69f67e2507b7"
+        name="Vraag"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="5acfeaf2-9e4c-47ea-8b94-2dad1eb5166e"
+            name="Vraag"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="0d76017f-73b7-44d3-9cbd-7694a3452711"
+        name="Antwoord"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="b9f876e0-8634-484b-ab49-2dee5e9b064f"
+            isDerived="false"
+            sourceEndRoleName="Vraag kan slecht één antwoord hebben"
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="12ec44c5-cd65-434c-891d-69f67e2507b7"
+              LastKnownName="Vraag"
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c771774b-6739-4c0a-9470-bcdc5a4bf3fc"
+                  name="Vraag kan slecht één antwoord hebben"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="3b8d6013-1a93-4aec-ad71-3f9ff6b50d0e"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="5dad354a-9d05-437e-9d3c-86ef9d06989f"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bd5c0e9d-da34-4ba4-b7ef-3487ac006790"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="841b5b5b-b905-4853-8403-a687034e0bf7"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="6ed30643-170d-421d-82df-01e133b8093f"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="dfe96e40-d97e-4ad1-a23a-40b4879bc162"
+            name="Redelijk oneens" />
+          <enumerationLiteral
+            Id="cefeec10-b28a-409d-a13f-124b94def5db"
+            name="Redelijk eens" />
+          <enumerationLiteral
+            Id="9b7a8b3b-1456-4900-8bc6-82ca41050ef7"
+            name="Volledig eens" />
+          <enumerationLiteral
+            Id="bbcc9b2c-6c10-441f-b11b-a3f5f04fd96b"
+            name="Volledig oneens" />
+        </ownedLiterals>
+      </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="fc289bc8-f983-4e13-86a3-b4e66ff5f125"
+        name="Extern bedrijf"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="bfcf11f2-1e36-4f1e-8a26-21f7087c0248">
+            <interfaceMoniker
+              Id="c72ee931-3cae-4d1d-81b4-5d4ab9411edb"
+              LastKnownName="I contacteerbaar"
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="6fd06842-55f1-4cbb-87b9-f8becda6d7fc"
+            isDerived="false"
+            sourceEndRoleName="Deelnemers en experten kunnen aangesloten zijn bij een extern bedrijf"
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="befef03f-732e-42a1-a120-da39b818a5b9"
+              LastKnownName="Persoon"
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="898d2f25-3691-46e2-b379-6c9cd4c49409"
+                  name="Deelnemers en experten kunnen aangesloten zijn bij een extern bedrijf"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="acd8f2dd-d84a-4ff2-9de6-996c1cf935c0"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="bf70e13b-257d-4996-91f9-09f0fca7cf44"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="365d81ae-1062-43c4-98ad-afc72a109f21"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="7a3e8d55-853e-438c-b284-b6bde7082350"
+                      name="Lower"
+                      value="0" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="d09341f6-f5d1-4568-b150-980317ff42e2"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="d0aea84a-de0a-49e1-b9f4-190d62afa128"
+            isDerived="false"
+            sourceEndRoleName="Bedrijf is in een"
+            targetEndRoleName="Gemeente"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="3fae7ef0-0839-421f-a281-1f96fc35e26c"
+              LastKnownName="Gemeente"
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="12b7bafb-1bb5-48ac-845f-95dbd6258dae"
+                  name="Bedrijf is in een"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e115dd1c-6d41-45ac-b989-47d6baadb434"
+                  name="Gemeente"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="4a996c48-d00d-4bb9-a6f1-d1a5d720da95"
+            name="Naam"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="4c524570-e4f5-4438-bf87-b07881882cc0"
+            name="Straat"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="a046169a-d3ce-4827-9a27-19fdcff20b62"
+            name="Huisnummer"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="e4c66e1e-cece-41b2-ab43-76dc01553e7f"
+            name="GsmNummer"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="b663bcbf-36b4-4826-8f32-65c4bed029d1"
+            name="TelefoonNummer"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="b8228d03-23ea-4a47-a678-8d4db39132ad"
+            name="BTWNummer"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="ecb2415a-ae63-45db-83d7-965f83f391c1"
+            name="Email adres"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="e49051bc-b5d1-427e-9e50-40d56edbbbd0"
+        name="Inschrijving"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="56ce822f-bf01-4422-bf05-5e9dd33d9121"
+            isDerived="false"
+            sourceEndRoleName="De deelmemers moeten zich inschrijven"
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="b34657e1-3144-49ba-857c-45e413a1fd60"
+              LastKnownName="Deelnemer"
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1a63520d-9bca-4074-b176-296aeefe4233"
+                  name="De deelmemers moeten zich inschrijven"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="288f83d0-938e-4df6-b17d-bf68de3b41d8"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="77014bad-13be-42aa-8a5f-6444c281ae97"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9ef0ad7c-ac2a-434c-b210-0f58e71e28f0"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="59327625-23d4-460f-a9d5-302d77ae7e37"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="8a00fbac-43ba-4ee3-a6ac-88586813d9e8"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="006c16a2-a721-43fb-81b0-6b61f386c914"
+            name="Datum"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="ce2a3c3b-ecfe-42e5-a1c0-431c52be5c76"
+        name="In functie van bedrijf"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="d8bd7358-3524-4b87-9353-ee1f8249e727">
+            <interfaceMoniker
+              Id="c72ee931-3cae-4d1d-81b4-5d4ab9411edb"
+              LastKnownName="I contacteerbaar"
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="bb8f8fdf-b5d5-45d8-be48-028dbe4d63c4"
+        name="Op zelstandige basis"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="d77a6ec6-623c-469c-847e-53a5efeb79b0"
+        name="Lokaal"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="6e24c9ef-7230-415e-9e3f-bbea0a93ff1c"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName="Sessie wordt gegeven in een lokaal"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="3e7b55b8-dc62-4b50-bde7-e5188688d230"
+              LastKnownName="Sessie"
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="90b2d21a-7a0d-42a3-9cc2-76e8ead57178"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="113f9729-2ef5-435f-b3a8-1728c07d627a"
+                  name="Sessie wordt gegeven in een lokaal"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="93a969e4-8b53-4e1a-8c1d-6e09bbb1853d"
+                      name="Lower"
+                      value="0" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="b2103d0f-0362-4568-96ac-526bdb5d1be5"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="dbc9e789-8e15-467d-a5f3-a41ea0af309b"
+            name="Nummer"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="2cb74734-5266-4446-9e2b-acc5d1c33374"
+        name="Eigen lokaal"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="783f0981-80ff-4d32-804c-3748df2f7851"
+            isSubstitutable="false">
+            <classMoniker
+              Id="d77a6ec6-623c-469c-847e-53a5efeb79b0"
+              LastKnownName="Lokaal"
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="c90f47ea-14e6-4454-adc9-8bbd139b1875"
+        name="Op locatie"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="52d48ef3-b33c-49e2-8f04-eda6a60ca23e">
+            <interfaceMoniker
+              Id="c72ee931-3cae-4d1d-81b4-5d4ab9411edb"
+              LastKnownName="I contacteerbaar"
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="991a0163-fbdc-413b-a67f-f57bbd9d5420"
+            isSubstitutable="false">
+            <classMoniker
+              Id="d77a6ec6-623c-469c-847e-53a5efeb79b0"
+              LastKnownName="Lokaal"
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="c72ee931-3cae-4d1d-81b4-5d4ab9411edb"
+        name="I contacteerbaar"
+        isAbstract="false"
+        isLeaf="false">
+        <ownedAttributes>
+          <property
+            Id="f447648a-3019-42c2-93bc-5df2f2f014b2"
+            name="Gemeente"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="4a5fdad6-6885-43c0-bce7-b3215caa6fef"
+            name="Postcode"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="c8a7ebc1-3b9e-43a2-a11f-5582a704836e"
+            name="Straat en nummer"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="028b6b34-d6ef-4a63-8d53-e70bbdd79501"
+            name="Telefoon nummer"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributes>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="8c16ba40-bc7f-4888-b0b4-191e23681a67"
+        name="Conferentie voorzitter"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="44cbd542-9dc0-4289-8b32-6858d9fd9d82"
+            isDerived="false"
+            sourceEndRoleName="Conferentie voorzitter"
+            targetEndRoleName="Legt lokaak vast "
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="93151688-d5df-405e-93f4-869e5c9adc8a"
+              LastKnownName="Conferentie plannen"
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ae4b5563-7cf3-42ea-96d1-98d906bf4f85"
+                  name="Conferentie voorzitter"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="11f449ad-295d-402e-8732-5b9f121d55cc"
+                  name="Legt lokaak vast "
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="3922477d-0423-40b3-9e36-4e01f2e173ef"
+            isDerived="false"
+            sourceEndRoleName="Conferentie voorzitter"
+            targetEndRoleName="Nodigt sprekers uit"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="e685f6c7-aa5e-47da-8699-33c79fe2c23c"
+              LastKnownName="Nodigt experten uit"
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c077abe8-5355-4646-9c9e-c9d426c96916"
+                  name="Conferentie voorzitter"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="16c8e7da-e5de-43d0-931c-93fb44f7ab32"
+                  name="Nodigt sprekers uit"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="8439f920-6e77-468b-9bed-ba4bb80b9266"
+            isDerived="false"
+            sourceEndRoleName="Conferentie voorzitter"
+            targetEndRoleName="Registreren van inschrijvingen (via post)"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="8c362088-0317-4554-af3c-d142709d7088"
+              LastKnownName="Registreren van inschrijvingen (via post)"
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a35d1f8d-54c5-4a93-a96f-425da15e41a0"
+                  name="Conferentie voorzitter"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="43998a01-e9d2-4d76-a408-81a24d02d6f7"
+                  name="Registreren van inschrijvingen (via post)"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="180cafee-008b-4f40-9638-a96ac1c502bb"
+            isDerived="false"
+            sourceEndRoleName="Conferentie voorzitter"
+            targetEndRoleName="stelt contracten op met experten"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="e1a52c33-ae77-4a6c-9a3f-89d23a3c1504"
+              LastKnownName="stelt contracten op met experten"
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ddead62d-afe2-4d2b-84fa-24275e0d8a63"
+                  name="Conferentie voorzitter"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5f3ae26e-0def-40ba-aa3d-9ecd8f3c0e8e"
+                  name="stelt contracten op met experten"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="00f5958c-8a3e-4cb1-b392-26551e94a9da"
+        name="Experten"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="025a938c-225f-467e-94a7-7ad1f97cf812"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName="Geeft de conferentie"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="ca8649cc-c60b-4042-af28-a734bedc5584"
+              LastKnownName="Geeft de conferentie"
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="85d5a1f3-01d7-4e1b-b5d8-d449b9df04ba"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6e1e7c9d-f121-4ef1-bb04-905cf0d1fee4"
+                  name="Geeft de conferentie"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="b7c52c44-a08e-4ed6-8fdf-1fa6c27b70fe"
+            isDerived="false"
+            sourceEndRoleName="Experten"
+            targetEndRoleName="Plaatsen vrije dage online"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="4f970191-3103-4b25-aeee-8b31c70d5e90"
+              LastKnownName="Plaatsen vrije dagen online"
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="94c1f5bc-1e41-4467-bc33-07cdb6d29bcd"
+                  name="Experten"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bcb530c7-8671-4167-a357-27be18fea861"
+                  name="Plaatsen vrije dage online"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="260daa38-095e-4432-85fa-144527ea8b1d"
+        name="Conferentie organizeren"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="93151688-d5df-405e-93f4-869e5c9adc8a"
+        name="Conferentie plannen"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="7be04169-dfee-444e-ae27-00504025e8f4">
+            <useCaseMoniker
+              Id="0f30f5c5-1ca4-4cb9-9edb-4940fdb11e50"
+              LastKnownName="Nodigen experten uit"
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+          </dependency>
+          <dependency
+            Id="c1406520-599d-42e5-820c-99980ee2ee66">
+            <useCaseMoniker
+              Id="78b66b46-dcb8-4a5f-95d3-33cb8109bf14"
+              LastKnownName="Selecteerd experten"
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+          </dependency>
+          <dependency
+            Id="29455b8c-b885-4564-b032-157c09e0fe45">
+            <useCaseMoniker
+              Id="675dd861-e2f9-44c9-b70e-e5b068d7f6fe"
+              LastKnownName="Contact opnemen met extern bedrijf"
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+          </dependency>
+          <dependency
+            Id="c7f4fb6d-c830-42d3-a34b-b3d8ae19db8a">
+            <useCaseMoniker
+              Id="f05c35c8-5ba0-420a-a79c-8801f008bf78"
+              LastKnownName="Reserveren van het lokaal"
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+          </dependency>
+          <dependency
+            Id="15193f71-2fc2-4718-abe3-d08fc3cc83cf">
+            <useCaseMoniker
+              Id="112b9a8d-dcb4-461e-a217-ab44d49ea67e"
+              LastKnownName="Legt lokal vast"
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+          </dependency>
+          <dependency
+            Id="296cfd63-537b-457b-a200-7f918f42f10b">
+            <useCaseMoniker
+              Id="2aacf193-7575-4c9b-8ad1-c3113f4d172e"
+              LastKnownName="Neemt contact op met extern bedrijf"
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+          </dependency>
+          <dependency
+            Id="5a1ca265-e693-41da-8cb3-7b533f8a794a">
+            <useCaseMoniker
+              Id="f2cd575a-3c9a-4930-9352-5e7075ec2a51"
+              LastKnownName="Selecteerd experten"
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+          </dependency>
+          <dependency
+            Id="d20e47ac-71e3-4c77-8049-427ebc72a40d">
+            <useCaseMoniker
+              Id="032963b2-61fc-410f-a36d-f85066cf4d9d"
+              LastKnownName="Maakt contract op"
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+          </dependency>
+          <dependency
+            Id="23ce3234-8b65-4fd8-9cc0-fdf71f63537c">
+            <useCaseMoniker
+              Id="296e467d-0d85-45c0-a93e-99015f4365d4"
+              LastKnownName="Maakt een uurregeling"
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+          </dependency>
+          <dependency
+            Id="9f7305d3-929c-473a-b763-d241cb2a8210">
+            <useCaseMoniker
+              Id="a5cc63a4-93a5-4aaa-a65d-89718748b2ab"
+              LastKnownName="Plaats conferentie online en zorgt voor een inschrijvinsmanier"
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+          </dependency>
+        </suppliersInternal>
+        <subjects>
+          <subsystemMoniker
+            Id="260daa38-095e-4432-85fa-144527ea8b1d"
+            LastKnownName="Conferentie organizeren"
+            LastKnownLocation="ConferentieSysteemULM.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="e685f6c7-aa5e-47da-8699-33c79fe2c23c"
+        name="Nodigt experten uit"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="0f30f5c5-1ca4-4cb9-9edb-4940fdb11e50"
+        name="Nodigen experten uit"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="675dd861-e2f9-44c9-b70e-e5b068d7f6fe"
+        name="Contact opnemen met extern bedrijf"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="fa84ae80-5171-48c2-aab0-03175672544e"
+        name="Gewoone sessie"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="5998966b-b9b0-4883-ac80-262b7c17dd75"
+            isSubstitutable="false">
+            <classMoniker
+              Id="3e7b55b8-dc62-4b50-bde7-e5188688d230"
+              LastKnownName="Sessie"
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="ca8649cc-c60b-4042-af28-a734bedc5584"
+        name="Geeft de conferentie"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="1e150893-42f6-4075-b3dd-187ffc8fb26b"
+        name="Beoordeeld de experten"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="79cd8749-cdbd-4f75-affb-e03489127cae">
+            <useCaseMoniker
+              Id="f1f3871b-1ce3-4000-a608-6e778af71789"
+              LastKnownName="Plaatsen bolletjes bij het antwoord die ze willen kiezen"
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+          </dependency>
+        </suppliersInternal>
+        <subjects>
+          <subsystemMoniker
+            Id="05532abf-d13a-4cce-84c5-1985494fd572"
+            LastKnownName="Evaluaties"
+            LastKnownLocation="ConferentieSysteemULM.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="39b5203e-acea-49a6-9472-149959481519"
+        name="Deelnemer"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="0e7a128e-85b7-4792-af88-2a14b28558cb"
+            isDerived="false"
+            sourceEndRoleName="Deelnemer"
+            targetEndRoleName="Beoordeeld de experten"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="1e150893-42f6-4075-b3dd-187ffc8fb26b"
+              LastKnownName="Beoordeeld de experten"
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3befaea4-6f4f-403d-bfad-77b17bee0282"
+                  name="Deelnemer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="08fea4c8-f75c-47f3-841a-131603b452af"
+                  name="Beoordeeld de experten"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="04101572-cee1-4995-a523-3ad2f64e1c61"
+            isDerived="false"
+            sourceEndRoleName="Deelnemer"
+            targetEndRoleName="UseCase1"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="b507de17-25f6-47e9-94b9-e7f27e84db4b"
+              LastKnownName="Schrijft zich in via internet"
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1a522395-4ff4-495b-9953-4dcd254df38a"
+                  name="Deelnemer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bd929367-d78c-44c5-8a4b-32c51a6a560e"
+                  name="UseCase1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="a7799e48-7bf2-467d-8e90-389a175614d2"
+        name="Conferentie bijwonen"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="e1a52c33-ae77-4a6c-9a3f-89d23a3c1504"
+        name="stelt contracten op met experten"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="260daa38-095e-4432-85fa-144527ea8b1d"
+            LastKnownName="Conferentie organizeren"
+            LastKnownLocation="ConferentieSysteemULM.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="78b66b46-dcb8-4a5f-95d3-33cb8109bf14"
+        name="Selecteerd experten"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="25b593e6-ff75-4f38-a9f3-3c1748414bd2"
+        name="Adminestratieve medewerker"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="47a1316e-0ed6-43a4-81ed-3afc63ffa765"
+            isDerived="false"
+            sourceEndRoleName="Adminestratieve medewerker"
+            targetEndRoleName="Verzamelt de evaluaties"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="27db07c0-e8f8-4202-9880-3ac57d7506f4"
+              LastKnownName="Verzamelt de evaluaties"
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6c97603f-bb4a-4475-a52e-b178db5b5749"
+                  name="Adminestratieve medewerker"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c9fea153-0730-4b80-bc3e-f283787e3cbc"
+                  name="Verzamelt de evaluaties"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="992a8dbf-9add-49f3-8c41-cfa7d363f242"
+            isDerived="false"
+            sourceEndRoleName="Adminestratieve medewerker"
+            targetEndRoleName="Registratie in het systeem"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="db1f390c-3eb0-44fa-95be-9b9da40d16e3"
+              LastKnownName="Registratie van evaluaties in het systeem"
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c70e6fc1-0ec6-4470-b521-1b247c014ea2"
+                  name="Adminestratieve medewerker"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="36e05f88-0721-4e1b-ad4a-c66efb9474ab"
+                  name="Registratie in het systeem"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="27db07c0-e8f8-4202-9880-3ac57d7506f4"
+        name="Verzamelt de evaluaties"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="db1f390c-3eb0-44fa-95be-9b9da40d16e3"
+        name="Registratie van evaluaties in het systeem"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="9c467013-7418-4778-b1eb-ce9babff6f96">
+            <useCaseMoniker
+              Id="18ce446c-3520-4959-b9c1-4384818e07b8"
+              LastKnownName="Verzamelt de evaluaties"
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+          </dependency>
+          <dependency
+            Id="069957e1-3b7c-4b92-8b15-18633bb5a1eb">
+            <useCaseMoniker
+              Id="10f343eb-3f2a-4c09-a987-fc5dd4be74a9"
+              LastKnownName="Vult de gegevens in het systeem"
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+          </dependency>
+          <dependency
+            Id="77215848-c86e-4e6c-a92b-5b388f0ee9e1">
+            <useCaseMoniker
+              Id="36f77799-42fc-40f2-96c8-d5abe89ccec6"
+              LastKnownName="Berekend de uitslag"
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+          </dependency>
+        </suppliersInternal>
+        <subjects>
+          <subsystemMoniker
+            Id="05532abf-d13a-4cce-84c5-1985494fd572"
+            LastKnownName="Evaluaties"
+            LastKnownLocation="ConferentieSysteemULM.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="05532abf-d13a-4cce-84c5-1985494fd572"
+        name="Evaluaties"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="8c362088-0317-4554-af3c-d142709d7088"
+        name="Registreren van inschrijvingen (via post)"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="0c791568-d911-4178-a80d-73c6ce1d8143">
+            <useCaseMoniker
+              Id="0269f3d3-7448-4f00-bb09-3d412762dbed"
+              LastKnownName="Geven gegevens in van de cursist en de cursus die hij/zij wilt volgen"
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+          </dependency>
+        </suppliersInternal>
+        <subjects>
+          <subsystemMoniker
+            Id="08b941d1-8ca5-48c9-b2df-bcf5d659d076"
+            LastKnownName="Ischrijvingen"
+            LastKnownLocation="ConferentieSysteemULM.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f1f3871b-1ce3-4000-a608-6e778af71789"
+        name="Plaatsen bolletjes bij het antwoord die ze willen kiezen"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="4f970191-3103-4b25-aeee-8b31c70d5e90"
+        name="Plaatsen vrije dagen online"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="260daa38-095e-4432-85fa-144527ea8b1d"
+            LastKnownName="Conferentie organizeren"
+            LastKnownLocation="ConferentieSysteemULM.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="0269f3d3-7448-4f00-bb09-3d412762dbed"
+        name="Geven gegevens in van de cursist en de cursus die hij/zij wilt volgen"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f05c35c8-5ba0-420a-a79c-8801f008bf78"
+        name="Reserveren van het lokaal"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="b507de17-25f6-47e9-94b9-e7f27e84db4b"
+        name="Schrijft zich in via internet"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="7e5137b3-8350-49d5-92b1-4c823765ca3b">
+            <useCaseMoniker
+              Id="2b0800e0-f9a2-49fc-a579-2211e99db22f"
+              LastKnownName="selecteerd de conferentie"
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+          </dependency>
+          <dependency
+            Id="47615c1a-6a5f-4794-bf5b-32947815c909">
+            <useCaseMoniker
+              Id="264c2b06-8303-46e4-bad3-6ad0cfbea550"
+              LastKnownName="Vult de gegevens in."
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+          </dependency>
+        </suppliersInternal>
+        <subjects>
+          <subsystemMoniker
+            Id="08b941d1-8ca5-48c9-b2df-bcf5d659d076"
+            LastKnownName="Ischrijvingen"
+            LastKnownLocation="ConferentieSysteemULM.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="08b941d1-8ca5-48c9-b2df-bcf5d659d076"
+        name="Ischrijvingen"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="112b9a8d-dcb4-461e-a217-ab44d49ea67e"
+        name="Legt lokal vast"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="260daa38-095e-4432-85fa-144527ea8b1d"
+            LastKnownName="Conferentie organizeren"
+            LastKnownLocation="ConferentieSysteemULM.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2aacf193-7575-4c9b-8ad1-c3113f4d172e"
+        name="Neemt contact op met extern bedrijf"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="260daa38-095e-4432-85fa-144527ea8b1d"
+            LastKnownName="Conferentie organizeren"
+            LastKnownLocation="ConferentieSysteemULM.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f2cd575a-3c9a-4930-9352-5e7075ec2a51"
+        name="Selecteerd experten"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="260daa38-095e-4432-85fa-144527ea8b1d"
+            LastKnownName="Conferentie organizeren"
+            LastKnownLocation="ConferentieSysteemULM.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="032963b2-61fc-410f-a36d-f85066cf4d9d"
+        name="Maakt contract op"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="260daa38-095e-4432-85fa-144527ea8b1d"
+            LastKnownName="Conferentie organizeren"
+            LastKnownLocation="ConferentieSysteemULM.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="296e467d-0d85-45c0-a93e-99015f4365d4"
+        name="Maakt een uurregeling"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="260daa38-095e-4432-85fa-144527ea8b1d"
+            LastKnownName="Conferentie organizeren"
+            LastKnownLocation="ConferentieSysteemULM.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a5cc63a4-93a5-4aaa-a65d-89718748b2ab"
+        name="Plaats conferentie online en zorgt voor een inschrijvinsmanier"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="260daa38-095e-4432-85fa-144527ea8b1d"
+            LastKnownName="Conferentie organizeren"
+            LastKnownLocation="ConferentieSysteemULM.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2b0800e0-f9a2-49fc-a579-2211e99db22f"
+        name="selecteerd de conferentie"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="08b941d1-8ca5-48c9-b2df-bcf5d659d076"
+            LastKnownName="Ischrijvingen"
+            LastKnownLocation="ConferentieSysteemULM.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="264c2b06-8303-46e4-bad3-6ad0cfbea550"
+        name="Vult de gegevens in."
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="08b941d1-8ca5-48c9-b2df-bcf5d659d076"
+            LastKnownName="Ischrijvingen"
+            LastKnownLocation="ConferentieSysteemULM.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="18ce446c-3520-4959-b9c1-4384818e07b8"
+        name="Verzamelt de evaluaties"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="05532abf-d13a-4cce-84c5-1985494fd572"
+            LastKnownName="Evaluaties"
+            LastKnownLocation="ConferentieSysteemULM.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="10f343eb-3f2a-4c09-a987-fc5dd4be74a9"
+        name="Vult de gegevens in het systeem"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="05532abf-d13a-4cce-84c5-1985494fd572"
+            LastKnownName="Evaluaties"
+            LastKnownLocation="ConferentieSysteemULM.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="36f77799-42fc-40f2-96c8-d5abe89ccec6"
+        name="Berekend de uitslag"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="05532abf-d13a-4cce-84c5-1985494fd572"
+            LastKnownName="Evaluaties"
+            LastKnownLocation="ConferentieSysteemULM.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="c7524c42-964e-4199-adc5-5a25e95a1e32"
+        name="Conferentie"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="50916be5-e4c7-49d4-b820-92dd819640d0"
+        name="Conferentie"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="fc604532-1ecd-4d70-b3af-dc7b0b05999f"
+            isDerived="false"
+            sourceEndRoleName="Conferentie"
+            targetEndRoleName="Lokaal"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="813f717f-d675-4728-aa28-f53ee9893cb1"
+              LastKnownName="Lokaal"
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4210dee9-736a-4a9a-931c-5f8ade312982"
+                  name="Conferentie"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c0ead038-40b5-4675-a2b4-66f5edb08c8e"
+                  name="Lokaal"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="26ecc237-8a5c-44d8-8d04-1743ec8ce9e7"
+            name="ID"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="adb4853a-5b5a-4938-93d6-e27d578ad232"
+            name="Voorzitter"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="2c879dd4-2244-4929-98b9-bab699285d59"
+            name="LokaalID"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="813f717f-d675-4728-aa28-f53ee9893cb1"
+        name="Lokaal"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="4f61bf17-3bd5-4ac9-9321-8cb7d10d602a"
+            name="ID"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="1f25bd08-6010-4ee7-9e67-49da6901e56f"
+            name="LokaalNummer"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="c6b63888-c01b-4fd3-a24a-4c01335176ea"
+        name="Expert"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="bc1ef1b5-d56f-45f0-9ba4-2085a63e0b27"
+            name="ID"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="f2be6e06-cc41-4e8e-8f4e-40c4e553046e"
+            name="NaamID"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="c976a90b-28a7-4586-b6d7-6daa52ca68d5"
+            name="ContactID"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="d617df8b-47a6-4f6a-a22b-7db839b5f838"
+            name="BedrijfsID"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="277b232b-e072-4586-97a9-79194ffe5a8e"
+            name="Attribute1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="befef03f-732e-42a1-a120-da39b818a5b9"
+        name="Persoon"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="70ace494-a950-4ed6-980e-2fb8e244ca0c"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName="Voorzitter van een conferentie"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="326daf66-50dc-44a3-aef0-1e1d40f4ba48"
+              LastKnownName="Conferentie"
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="51e3c3ac-6839-44c1-a7a5-f0c6a2ffc049"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="273b7442-39dc-487d-9e3f-a391e8665a33"
+                  name="Voorzitter van een conferentie"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="86d4762f-fa95-4711-9ed6-9da89047779f"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="d46c1d31-0fc7-4178-8136-52a56c36fbc3"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="77d9f9a1-9463-4ed4-8133-8b3ed953a674"
+            isDerived="false"
+            sourceEndRoleName="Deelnemer doet mee aan een conferentie dag"
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="7e7cc6d7-2744-4b60-9f35-5a061df93e5c"
+              LastKnownName="Conferentie dag"
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8ef9f5e9-ce99-4e31-a1ca-8537d91aa23e"
+                  name="Deelnemer doet mee aan een conferentie dag"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="0aee70b2-cf46-43d6-a5f4-6b566f1dee38"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="5669aea0-4277-4eda-a623-c828fe476315"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c064ec09-f480-40f2-b49b-eef73cfb8c0b"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="1bbee531-c360-44cf-b324-cf48aa93ceaa"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="8d1c3c4c-eb6a-469a-b2fd-076daddb286e"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="dc4e658e-12d7-4644-a098-58e3ed51dab0"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName="Sessie wordt gegeven door een expert"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="3e7b55b8-dc62-4b50-bde7-e5188688d230"
+              LastKnownName="Sessie"
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a6897daa-0199-4628-8759-784bcd9b3edc"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="00cf1acd-0aee-466c-90a1-9f916de88a18"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="ff7fc0a2-7b32-4095-a148-cf7234f7958f"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="be28a77d-53d8-417b-84e1-a11ffe47b6d9"
+                  name="Sessie wordt gegeven door een expert"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="39e4567d-230f-49be-8fe5-d0dbbe52d017"
+            name="Voornaam"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="e1017f39-6adf-4f85-b690-a23308ea8635"
+            name="Achternaam"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="04acde33-95af-4e1c-a828-a9a905d97ad7"
+            name="Straat"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="817602d7-ec5d-41af-8888-bb56e2beb9c7"
+            name="Huisnummer"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="80ff3901-e425-4263-8857-b201b53e879d"
+            name="TelefoonNummer"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="54de05aa-4e0a-45f5-8254-26f207ed4ac7"
+            name="GsmNummer"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="800ed673-dd71-4939-aab4-edfd7bb6e3d3"
+            name="EmailAdres"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="7a931a39-9c4d-4add-8a4f-6c6484fdfd5d"
+            name="Gebruikersnaam"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="6d0e88c8-b83c-4e8a-9b71-427f0dc82611"
+            name="Wachtwoord"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="b489f4d0-cd68-4152-84e9-af949ed63775"
+            name="IsOnline"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="90f1507c-3689-44ca-bf42-b28255097770"
+        name="Functie"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="23cf5db2-62df-49f2-9416-0767b948f2bf"
+            isDerived="false"
+            sourceEndRoleName="Iedere persoon heeft een functie in het bedrijf"
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="befef03f-732e-42a1-a120-da39b818a5b9"
+              LastKnownName="Persoon"
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3bf63b8f-6d5b-481b-91e5-1b63dcb73318"
+                  name="Iedere persoon heeft een functie in het bedrijf"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c6e4a673-655b-4288-9365-b7604c606728"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="0e8b6c2c-fd5f-4c5d-9cc6-82194b1b3e2e"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="b1973bf6-29ce-4ca0-9cd7-4f22c398f2b8"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="04e029ef-5ccc-4323-8de2-69e1c44e5539"
+            name="Voorzitter" />
+          <enumerationLiteral
+            Id="eb971bda-24ab-4136-8cad-4a27deab7f2c"
+            name="Expert" />
+          <enumerationLiteral
+            Id="8650396b-fce6-49c2-9836-295147be639f"
+            name="Deelnemer" />
+          <enumerationLiteral
+            Id="31bdf8d1-1d97-4b3e-9be7-3b0063cd21d7"
+            name="Adminestratieve medewerker" />
+        </ownedLiterals>
+      </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="3fae7ef0-0839-421f-a281-1f96fc35e26c"
+        name="Gemeente"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="bcb74380-23ed-498d-87ff-1afbaabc20f2"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName="Persoon woont in een gemeente"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="befef03f-732e-42a1-a120-da39b818a5b9"
+              LastKnownName="Persoon"
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="94a7959a-91c8-4560-a0f1-0d8877300369"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1ad96f0d-6b99-4444-bf52-b9a1796d87c8"
+                  name="Persoon woont in een gemeente"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="49e0e2ae-28b1-4511-a455-5519249730ff"
+                      name="Lower"
+                      value="0" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="f3e25b0c-e974-446a-824c-c68a965b15ff"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="18cf2cac-bbc3-4bc8-93a0-5968a6449242"
+            name="Naam"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="885f652b-9954-4316-bb38-ebcd41879096"
+            name="Postcode"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="53feac94-1728-424f-9a2c-1a76f3daea85"
+        name="Provincie"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="95636b6c-0a4f-4c8d-b565-726f30890ed5"
+            isDerived="false"
+            sourceEndRoleName="Gemeente ligt in een provincie"
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="3fae7ef0-0839-421f-a281-1f96fc35e26c"
+              LastKnownName="Gemeente"
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="191a1cd8-9d37-429e-8522-0ac88cac8a77"
+                  name="Gemeente ligt in een provincie"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e1663bbe-3ac4-4347-8229-2887eb9a1052"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="3f3e4fe8-9977-4458-ae4a-74e9800e0406"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="4210eca2-b2f5-4ad4-898e-81b4c0587912"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="15751743-0a13-453d-9ffb-d94a6f4076a6"
+            name="Naam"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="51fbfc69-b6d7-4910-baff-b37aad12fb9f"
+        name="Factuur"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="154f1577-4a99-45f2-b1f5-596766b829ca"
+            isDerived="false"
+            sourceEndRoleName="betaald worden"
+            targetEndRoleName="Factuur kan in schijven"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="b0ce2368-9834-4ce6-b432-747edd840106"
+              LastKnownName="Betalingen"
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="99c00ea0-5c81-41c9-9924-d4c171abf255"
+                  name="betaald worden"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="47d5db7c-8af9-4bdf-9826-5c7af113120c"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="d749a895-db29-4666-8e85-0241e9cc45f0"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2db8597a-9d04-4476-beb7-deb550f5d3ce"
+                  name="Factuur kan in schijven"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="67e6bca8-804a-4552-a65a-710e550eddcb"
+            isDerived="false"
+            sourceEndRoleName="is een factuur gekoppeld"
+            targetEndRoleName="Aan een inschrijving"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="e49051bc-b5d1-427e-9e50-40d56edbbbd0"
+              LastKnownName="Inschrijving"
+              LastKnownLocation="ConferentieSysteemULM.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0da61529-d326-4dc7-ad7e-3a3b18adbd33"
+                  name="is een factuur gekoppeld"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="91fd0f0f-a066-476d-854c-3b7581000069"
+                  name="Aan een inschrijving"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="48fc550f-5fd9-48de-bd77-b5d52b2a8664"
+            name="Totaal bedrag"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="fd9041b7-4be7-4c1b-bfd4-20c1cfc23bbf"
+            name="Factuur nummer"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="f13169f7-0b18-4487-8657-93f63c224412"
+            name="Opmaak datum"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="b0ce2368-9834-4ce6-b432-747edd840106"
+        name="Betalingen"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="86d28553-147c-4b22-af15-ca6b49421b03"
+            name="Bedrag"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="57407155-11f1-4533-9343-3f067fab5a93"
+            name="Datum"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

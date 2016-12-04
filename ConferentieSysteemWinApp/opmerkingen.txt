@@ -1,0 +1,19 @@
+﻿  --> Agenda voor een sessie aan te maken:		| start uur (bv. 12:00) kan later zijn dan begin uur (bv. 11:00)
+  --> Agenda voor een sessie aan te maken:		| Overzicht van de reeds toegevoegde sessies weer geven
+  --> Agenda voor een sessie aan te maken:		| Dagen waar er een conferentie dag op zijn in het vetjes plaatsen in de kalender
+  --> Agenda voor een sessie aan te maken:		| Dubbele boekingen van lokalen zijn mogelijk.
+  --> Conferentie aanmaken (tab blad algemeen):	| Automatish aanvullen van de inschrijvings limiet zou handig zijn (1 maand later)
+  --> Details Experten m.b.t. de overeenkomst:	| tab blad hernoemen
+  --> Details Experten m.b.t. de overeenkomst:	| overzicht van alle contracten met domeinen
+  --> Details Experten m.b.t. de overeenkomst:	| contract toevoegen en verwijderen (contract breuk >> factuur aanmaken?).
+  --> Details Experten m.b.t. de evaluaties:	| overzicht verkrijgen van alle evaluaties
+  --> Details Experten m.b.t. de evaluaties:	| indien nieuwe expert moet dit tabblad verwijderd worden
+  --> Expert aanmaken:						    | Gaat totaal niet (knop enabelen)
+  --> Bekijken van account instellingen:		| gaat niet
+  --> Zoeken van personen:						| in hetzelde form  als alle andere!
+  --> Zoeken van bedrijven:						| nog aan te maken
+  --> Overzicht facturen:						| kan beter
+  --> Betalingen:								| moet onmogelijk zijn om te veel te betalen
+  --> Facturen:									| hoeft ook voor andere zaken mogelijk zijn (bv. schade van 3den)
+  --> Afmelden:									| terug naar aanmeld form
+  --> Aanmelden als directie:					| geen directie lid in database

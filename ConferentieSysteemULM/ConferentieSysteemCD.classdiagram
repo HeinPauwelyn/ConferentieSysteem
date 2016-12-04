@@ -1,0 +1,961 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="1786d399-d71a-4461-baec-1ef52a1e471e" name="conferentie systeem" linkedPackageId="f801a3a3-87c8-4daa-9520-d514bbf8b3cc" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <ownedCommentsInternal>
+    <comment Id="b04a8d06-cb89-4a4f-a678-36e8043524ea">
+      <elementDefinition Id="3b3b89a4-7939-471f-bcac-8914f4e21b34" />
+      <body>Hein Pauwelyn
+19/02/2014
+
+Conferentie systeem (eindwerk)
+Class diagram</body>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c75dbf2d-521f-47c6-9820-eec7e1a0d616" name="Conferentie" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="326daf66-50dc-44a3-aef0-1e1d40f4ba48" />
+        <targetEnds>
+          <association Id="da6496f6-5605-4587-827f-9e6e9b422427" isDerived="false" sourceEndRoleName="" targetEndRoleName="Confertrentie wordt opgespitst in conferentie dagen" isLeaf="false" isAbstract="false">
+            <classMoniker Id="28758323-1f00-42eb-8a15-802ba1412465" LastKnownName="Conferentie dag" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a970c301-0b68-4270-ad4b-716976942c76" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="b9b32f8c-382b-453f-bf83-9ad5f3a0800c" name="Lower" value="1">
+                      <elementDefinition Id="ef4876a7-ad73-435d-9f6f-14b0bfc43bed" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="6b5d52c4-8beb-4e50-85f5-266462d05617" name="Upper" value="*">
+                      <elementDefinition Id="6a18e846-d94d-4305-91a5-e90678ae1ec4" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="ca6cc10d-d3da-4b17-b352-9ea0721ad407" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d84727cd-3d65-4584-90fc-d40be449f851" name="Confertrentie wordt opgespitst in conferentie dagen" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="87e8fcb6-0221-495c-ba53-0c0107df8a7b" name="Lower" value="1">
+                      <elementDefinition Id="49e5246c-642f-4caf-bf0b-36ac2653f141" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="a1ea36ac-4dca-415c-849d-b7dcf2f6bee2" name="Upper" value="*">
+                      <elementDefinition Id="b1bb63f0-5a1c-4e79-8883-1c8abe589929" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="01645d8c-1621-455c-9a48-79890fd03919" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="94374135-d620-4c3b-9245-70e199b39699" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="14cf626f-5e37-4466-82c4-8f70b12e47e7" name="Naam" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="26b1f7eb-7aa2-4221-bea3-d581c2b587b2" />
+          </property>
+          <property Id="77100028-8f63-4db9-864f-e5a7d153d718" name="Beschrijving" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1a8869e4-4b0a-4ea8-8958-8191765b068f" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="160e3fd3-b59f-42a1-9d59-14924c7cd3be" name="Overeenkomst" isAbstract="true" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="0ee8a4c7-27b2-4a0a-8fad-67b5a7dc7c42" />
+        <targetEnds>
+          <association Id="4e07ab40-f1c3-4dbb-979d-ba574ecf2da0" isDerived="false" sourceEndRoleName="Expert en voorzitter" targetEndRoleName="maken een overeenkomst" isLeaf="false" isAbstract="false">
+            <classMoniker Id="72b216e8-e3e7-40be-a714-7728627f1b5a" LastKnownName="Persoon" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="39f090ef-0071-4b62-adbc-ab2000f6d7e2" name="Expert en voorzitter" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="b3f90c7f-f72a-4e27-94fa-568d3b6031e3" name="Lower" value="1">
+                      <elementDefinition Id="ee0e2212-269d-48c7-ae0e-1955d4eb54a2" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="6d5c07b6-64ca-42bb-94bf-53bd864a1ff0" name="Upper" value="*">
+                      <elementDefinition Id="863356df-202b-4c44-b6bd-d8b6b40775fe" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="240c7ce1-4114-4544-a918-86a89ff4aa8e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b1932cc5-de2e-4add-b50b-96fc6701a807" name="maken een overeenkomst" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="5e93d5a3-38bc-4e74-9d0d-417a73112dec" name="Lower" value="2">
+                      <elementDefinition Id="03f6aa42-65a1-4164-87c3-fd0ec967e1a5" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="b3c52f37-2db6-482a-8525-b80f55903c2a" name="Upper" value="2">
+                      <elementDefinition Id="e3704a31-2a93-4b84-aed4-35253ccfb348" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="11326c09-5681-4b67-a488-667f098f51d9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b9fe0117-8ca9-4b51-80c8-05efa68d2f20" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="a6358142-997f-47ef-a198-574f4091abbf" name="Begin datum" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7d002cdf-72fc-4fa7-9103-6609cc066252" />
+          </property>
+          <property Id="0e6b8363-f3ee-49f4-a4e8-d027992c0603" name="Looptijd" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e5462c14-d953-4639-8a86-0dbc8ada3ab0" />
+          </property>
+          <property Id="b9b9723d-560c-4aae-b918-32df24f34039" name="eind datum" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="88663a03-41d1-48ec-816c-ff2b5cdf7aca" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="63463bed-0b7d-4620-b1eb-23951403e6b0" name="Expertise" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="704ac7b8-78f1-42e2-a924-9ee6788c96cd" />
+        <targetEnds>
+          <association Id="bb82bcfb-2b6f-4b58-9e1d-c26220ec4254" isDerived="false" sourceEndRoleName="een expetiese heeft een expertiese domein" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="656744d7-d988-4f82-889e-70c6ccca30aa" LastKnownName="Expertise domein" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="20bc39d5-faa2-4c49-9c5c-71e093c1ab1e" name="een expetiese heeft een expertiese domein" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <lowerValueInternal>
+                    <literalString Id="57a8172f-a8af-402f-a648-d44f7bf40097" name="Lower" value="1">
+                      <elementDefinition Id="776f9203-876d-4abd-9151-839949f97232" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="d9b1e7fc-7fd9-4422-9d1c-d0bda794895c" name="Upper" value="*">
+                      <elementDefinition Id="9bb00253-35a0-44b6-a6e2-8370162215bc" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="b61d3e4a-46ec-4f55-aa44-3230bb9d3454" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="689456b4-8b75-4437-b46f-ec6f6bfd06eb" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false">
+                  <elementDefinition Id="1abb8a86-b27e-4c1c-95fd-741e5a271e5c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d0cc0317-5e60-4d16-a39b-648db414fe32" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="96193687-fabd-40c0-82b4-e72fcf3df46b" name="Naam" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="51323e75-2292-42a2-bc05-91e83fd6651d" />
+          </property>
+          <property Id="59c17274-4fff-4b49-bfe6-7c38e3dda14e" name="Beschrijving" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="bc4e12ca-0244-4d4a-9a8c-355fe6fd2bfd" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="656744d7-d988-4f82-889e-70c6ccca30aa" name="Expertise domein" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ad95f7be-bea1-4a92-b89d-5a056a6225c9" />
+        <targetEnds>
+          <association Id="8cbd577f-7320-4692-8d1d-afd5a372db80" isDerived="false" sourceEndRoleName="Experten voldoen aan een aantal expertise domeienen" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="72b216e8-e3e7-40be-a714-7728627f1b5a" LastKnownName="Persoon" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4fc24e78-b380-404a-9883-b766e60d2ccf" name="Experten voldoen aan een aantal expertise domeienen" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="92325a9e-79ee-4eb6-a7d5-c2290d17b1e5" name="Lower" value="1">
+                      <elementDefinition Id="b2ec19e5-c144-4cab-a923-e59c2ec209a5" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="cbc4241e-438d-4c7b-9a22-dc1c9b3eb53b" name="Upper" value="*">
+                      <elementDefinition Id="b1fada47-de66-4140-91ba-0250f70c9125" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="867a6d11-f33b-47f8-b4b4-5d93fcb9e51e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7eb95676-22ed-4260-8d5e-77329cf38fb0" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="50a34048-8bf5-468e-b93b-46c591521c1a" name="Lower" value="1">
+                      <elementDefinition Id="f70ffe70-ad98-41be-8626-998a4b5f145d" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="72fc17ce-f942-45ae-8780-7532d1e510f4" name="Upper" value="*">
+                      <elementDefinition Id="08af0abc-30b4-4209-a64f-42522841e495" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="d1527565-993e-4828-8034-1a94424e9983" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c3fe8318-944c-4532-82d5-d2a7e2b33421" />
+          </association>
+          <association Id="4f757aa0-e430-41a4-b200-e57947c5de4f" isDerived="false" sourceEndRoleName="" targetEndRoleName="In een sessie worden bepaalde domeinen aangehaald" isLeaf="false" isAbstract="false">
+            <classMoniker Id="0e27856b-3601-4821-939f-5cb1fbe3979a" LastKnownName="Sessie" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c6176785-8962-4953-809e-65fd2d4a4573" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="61360b26-71ff-41ce-91d1-500874e87c20" name="Lower" value="1">
+                      <elementDefinition Id="6af55a3b-b08a-474b-ae18-0f33a33d9155" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="7ddaae2f-10a5-4764-87a1-3f9e99ba4ffe" name="Upper" value="*">
+                      <elementDefinition Id="c6a73f62-fa35-43fa-a56d-839211446926" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="cf8fcb15-9969-44fd-b278-fcdb50fa3d8f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="886171b7-6253-4011-8f98-a7c3b0c9b150" name="In een sessie worden bepaalde domeinen aangehaald" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="072c4579-887a-4fcc-a87a-c2a29871bc43" name="Lower" value="1">
+                      <elementDefinition Id="f5a79a51-1eda-4a1b-8da4-a4f1116532f5" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="28cb0a1c-ba39-4cd9-8574-4f92019c4154" name="Upper" value="*">
+                      <elementDefinition Id="5ca162d6-b1a2-45a2-89aa-5a57e7d203b6" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="fb1251f3-908a-4a0c-bbf0-936a0680763d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="54dd4450-7731-4728-8aac-97dcae4f6959" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="8be63f9c-f71a-402e-85e1-117baa2ad44f" name="Naam" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="fc42960e-4ffa-4c6b-91db-439eabe00511" />
+          </property>
+          <property Id="4c9f1766-ebb0-4394-8b69-1cd4a70e8437" name="Beschrijving" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e8b15a8d-7698-4b5a-b02e-c0dc279ce922" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="28758323-1f00-42eb-8a15-802ba1412465" name="Conferentie dag" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="7e7cc6d7-2744-4b60-9f35-5a061df93e5c" />
+        <targetEnds>
+          <association Id="83a9dcf9-0b47-4617-a388-114f53f6074e" isDerived="false" sourceEndRoleName="" targetEndRoleName="op een dag worden verschillende sessies gegeven" isLeaf="false" isAbstract="false">
+            <classMoniker Id="0e27856b-3601-4821-939f-5cb1fbe3979a" LastKnownName="Sessie" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8a70a795-8aec-4217-b5a4-8ac32ee59ed0" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="ea6e934b-44cc-40e1-bf3c-2b7cd4d5ec24" name="Lower" value="1">
+                      <elementDefinition Id="b139679f-9ecd-4328-bf9f-bcfa5d344789" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="062d353e-64c2-43ab-b33b-0190c32618e8" name="Upper" value="1">
+                      <elementDefinition Id="824d59f4-7e34-4c68-969e-3db5fade2e02" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="f55c655c-8285-44b4-87c2-6ea66b246452" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="da5cd9ed-4c96-43d3-b60f-b884fc86de3d" name="op een dag worden verschillende sessies gegeven" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="10e64f2d-c6af-4041-b2ac-203649a82d6a" name="Lower" value="1">
+                      <elementDefinition Id="9c308d60-c58d-4cea-9ab9-7a06ce6cb161" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="3fc3159a-6c8e-4a06-9958-c159596bd98f" name="Upper" value="*">
+                      <elementDefinition Id="791517f4-1fe9-4699-bb5f-d90bbd747521" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="33707f1d-8233-426c-9959-3a91d84bcacc" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="49bf7e92-c97a-47ee-8b0e-e845a981cb62" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="3e803a19-c8ca-47f3-ac9d-bdbb74a8f816" name="Datum" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4466d122-29ee-441e-b3b3-e9ad330ec811" />
+          </property>
+          <property Id="0b8fcd06-4e87-4aaa-8349-97e21a4ac53a" name="Inschrijvingsgeld" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2cf1835a-3d38-4008-be06-9f142d8002fb" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="0e27856b-3601-4821-939f-5cb1fbe3979a" name="Sessie" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="3e7b55b8-dc62-4b50-bde7-e5188688d230" />
+        <targetEnds>
+          <association Id="efe690ab-efcb-4d5c-8e95-95bc066d4ceb" isDerived="false" sourceEndRoleName="Sessie gaat over thema" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="49513b8c-c1c1-4f88-aeaa-20c03b61af6c" LastKnownName="Thema" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cdbb88c6-fcbd-4458-89df-c829c0372be3" name="Sessie gaat over thema" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="1e9d44dd-e738-498e-b3ec-0df37aa3e507" name="Lower" value="1">
+                      <elementDefinition Id="16f8809c-da04-44c6-b1c3-8d61fc8d90a0" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="4c9f5399-099a-48f0-a6a8-3b3f536eeda7" name="Upper" value="*">
+                      <elementDefinition Id="46b127f4-4b37-4fe7-8908-0b8c9e0f3b3a" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="fd267edd-e053-458e-a867-80680ecf1116" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="14c34a12-cdf8-45e7-81c0-11b8b75f47cf" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="268ab19b-2903-41a5-a9b7-213090d27c59" name="Lower" value="1">
+                      <elementDefinition Id="1862c6e9-71c9-4f0b-80a2-bad094c6ba55" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="2caf559b-288c-4012-97f9-adc496517c2c" name="Upper" value="*">
+                      <elementDefinition Id="7f2c9441-3159-4fe1-ab2e-d55c5491bc54" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="13cfb319-e09a-4f24-a890-c8de22964778" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c7409368-af24-479d-b051-f4285128f78f" />
+          </association>
+          <association Id="21abb903-f097-457e-9c88-8794deafc1fe" isDerived="false" sourceEndRoleName="Bij iedere sesie hoort een evaluatie" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="057eab1d-53bc-411d-bda1-fa79f576681a" LastKnownName="Evaluatie" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="813b870f-edcb-4d5f-8cfa-891cae412168" name="Bij iedere sesie hoort een evaluatie" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="321268ec-1918-4219-9861-327c94e792d8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="234923d7-5fe9-4a12-a451-06e4349f3eb9" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="19260f69-1dab-4804-9cd8-ea6584828ae1" name="Lower" value="*">
+                      <elementDefinition Id="845387b9-d0b5-4c27-83aa-5d950309149d" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="a290da7e-395b-42c6-b0e1-20ec90f6ddd9" name="Upper" value="*">
+                      <elementDefinition Id="b2086b81-f1a2-48f4-9792-152add34f248" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="7a7a2324-bd3b-41f4-8b9b-c17b4ba9d8fe" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="aa7d0677-6263-44db-9909-69e755a12bbc" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="e920acbb-86c0-455f-b332-c431e389bad4" name="Datum" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2642b1ed-1b50-4c48-9477-9534dfe3c7b8" />
+          </property>
+          <property Id="c22ada09-a373-484e-94cd-877d90bcf129" name="Aanvang uur" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b16f842e-fdf4-44c6-92b7-37cc3a0b0de3" />
+          </property>
+          <property Id="34791e7a-056a-4bc1-9fdb-34647cae4ff3" name="Eind uur" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="51cc0ae9-c1c0-4aeb-81e8-e6dcea68f2fc" />
+          </property>
+          <property Id="c178ee72-7fb9-44e1-94fa-edf2d5d0cdf5" name="IsKeynote" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f046ea6d-c60b-4eb2-b6ba-079880ef46fb" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="49513b8c-c1c1-4f88-aeaa-20c03b61af6c" name="Thema" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="325572ee-d63f-4d6e-b89d-82bce8359ceb" />
+        <ownedAttributesInternal>
+          <property Id="7862b1fa-7e67-4b81-89a2-07056459f85a" name="Naam" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6a49ef5b-7640-4181-8fcf-dc9b62cf3964" />
+          </property>
+          <property Id="1bda421b-b7ff-4826-9bfa-18aca08a6b9f" name="Beschrijving" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5b0edd6a-5727-4c22-94f9-3fc52ed34c9b" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="057eab1d-53bc-411d-bda1-fa79f576681a" name="Evaluatie" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="2711c664-4581-4e6b-9cd2-2481a783c5d2" />
+        <targetEnds>
+          <association Id="6a7004ec-f3ce-4025-9d81-e5a2d0e5fb13" isDerived="false" sourceEndRoleName="Evaluatie heeft vershillende vragen" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="08e90329-0a11-469d-95da-148244c1c7b0" LastKnownName="Vraag" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d0dff153-dace-461a-abea-059723b9079b" name="Evaluatie heeft vershillende vragen" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <lowerValueInternal>
+                    <literalString Id="4b9a4901-0c6b-4ac4-8460-bd772a87ee98" name="Lower" value="1">
+                      <elementDefinition Id="974648c3-b4c5-4121-8261-9dac3e930764" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="dbd88e84-5f88-45d9-93f5-f6b6aadf0b43" name="Upper" value="*">
+                      <elementDefinition Id="063bea9e-8936-42e4-a8ea-2b8dc9d6a72a" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="0dcbb41f-1496-4ffc-b360-e8f73c2ce8e7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7498c07f-4f05-4dbb-933c-7e704ff56766" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="02509495-9d63-494f-95c8-f81988a94565" name="Lower" value="1">
+                      <elementDefinition Id="a71c0206-d573-40ce-8ce1-97b953e4e393" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="b6940c9f-e919-4711-baa6-ed7ec309e749" name="Upper" value="*">
+                      <elementDefinition Id="da5cfdc5-60df-417b-bb57-80fbe261a855" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="a7dc0d52-49b8-426f-b044-16a77da54c90" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="1b5845be-1e74-47ff-8e2a-b87f1c3e3405" />
+          </association>
+          <association Id="c21c158d-6a45-47ea-b8ce-05316ba52ca1" isDerived="false" sourceEndRoleName="" targetEndRoleName="Evaluatie gaat over een thema" isLeaf="false" isAbstract="false">
+            <classMoniker Id="49513b8c-c1c1-4f88-aeaa-20c03b61af6c" LastKnownName="Thema" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="482a92f9-3134-4a89-9975-a3f3b4bd07d9" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="35fdd68c-07da-4393-96a0-b59b69e99b9b" name="Lower" value="1">
+                      <elementDefinition Id="268b2c13-544f-486b-bade-96372ba44bcf" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="806db392-1049-4c05-923d-d07963c359c9" name="Upper" value="*">
+                      <elementDefinition Id="44ca3123-f66c-4590-913b-f6df48368b19" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="28eec39d-8185-4fd0-803d-df68952d6b1b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fe2fc641-9639-414c-8793-b539c82e8e60" name="Evaluatie gaat over een thema" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c8c9d96e-c41b-4b8e-b2d6-e1224225fd83" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="9679883b-863d-4db5-950b-b1ee3e8bc3d0" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="aacf87ed-f4b4-4d2d-8341-59a86d74eb24" name="Schore" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f996c379-a823-4cbf-a372-7a8ea4f048eb" />
+          </property>
+          <property Id="c348321a-f643-4833-9909-50841063a27d" name="Opmerkingen" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="22024cec-f410-4b79-99b4-308cd2b196e9" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="08e90329-0a11-469d-95da-148244c1c7b0" name="Vraag" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="12ec44c5-cd65-434c-891d-69f67e2507b7" />
+        <ownedAttributesInternal>
+          <property Id="9d76e3f5-5aa5-4616-a8f6-dbb55ed5bd2b" name="Vraag" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5acfeaf2-9e4c-47ea-8b94-2dad1eb5166e" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="088cdc98-fa8c-4c42-8158-7121156b0714" name="Extern bedrijf" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="fc289bc8-f983-4e13-86a3-b4e66ff5f125" />
+        <targetEnds>
+          <association Id="83a3e6e2-1afb-407a-a377-e1a672e9425d" isDerived="false" sourceEndRoleName="Deelnemers en experten kunnen aangesloten zijn bij een extern bedrijf" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="72b216e8-e3e7-40be-a714-7728627f1b5a" LastKnownName="Persoon" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2eef0a0d-cefc-401b-aa1f-bb3c23b707cf" name="Deelnemers en experten kunnen aangesloten zijn bij een extern bedrijf" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="0c9462f0-abfc-4276-ac8e-ff7091e4ceb7" name="Lower" value="1">
+                      <elementDefinition Id="acd8f2dd-d84a-4ff2-9de6-996c1cf935c0" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="63c00551-2437-4e15-a07f-57ded343ef64" name="Upper" value="*">
+                      <elementDefinition Id="bf70e13b-257d-4996-91f9-09f0fca7cf44" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="898d2f25-3691-46e2-b379-6c9cd4c49409" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1ab62720-e5eb-461c-bf54-797a55a5bcdd" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="fba144cc-60c8-4a13-88f7-df61f6c3f145" name="Lower" value="0">
+                      <elementDefinition Id="7a3e8d55-853e-438c-b284-b6bde7082350" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="ee37f33c-1f2e-463a-b076-b1f1d8c79c3c" name="Upper" value="1">
+                      <elementDefinition Id="d09341f6-f5d1-4568-b150-980317ff42e2" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="365d81ae-1062-43c4-98ad-afc72a109f21" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="6fd06842-55f1-4cbb-87b9-f8becda6d7fc" />
+          </association>
+          <association Id="b2102df2-418c-4995-8b6b-b59745e81344" isDerived="false" sourceEndRoleName="Bedrijf is in een" targetEndRoleName="Gemeente" isLeaf="false" isAbstract="false">
+            <classMoniker Id="f1c172c6-b1d7-405c-a767-ad47f32dfb36" LastKnownName="Gemeente" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="25cced34-3a4b-4f4b-80d4-8f04c219ff42" name="Bedrijf is in een" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="12b7bafb-1bb5-48ac-845f-95dbd6258dae" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ed15a702-22de-4ca7-b281-0de7bd0aad85" name="Gemeente" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e115dd1c-6d41-45ac-b989-47d6baadb434" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d0aea84a-de0a-49e1-b9f4-190d62afa128" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="436ab2d8-4bff-411e-8ae0-a09853344a9b" name="Naam" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4a996c48-d00d-4bb9-a6f1-d1a5d720da95" />
+          </property>
+          <property Id="a6fc35ac-b8ef-49f8-9b6e-0d85e33d3244" name="Straat" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4c524570-e4f5-4438-bf87-b07881882cc0" />
+          </property>
+          <property Id="8ae5ac25-9adf-4df9-b0cf-2ca3e44cef90" name="Huisnummer" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a046169a-d3ce-4827-9a27-19fdcff20b62" />
+          </property>
+          <property Id="836d8032-3be0-46c8-8f24-2290be2d6116" name="GsmNummer" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e4c66e1e-cece-41b2-ab43-76dc01553e7f" />
+          </property>
+          <property Id="d7978419-de29-445e-b854-880e2b41f325" name="TelefoonNummer" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b663bcbf-36b4-4826-8f32-65c4bed029d1" />
+          </property>
+          <property Id="73cf7f21-6b91-4bae-b3ff-b4ecca81ffb9" name="BTWNummer" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b8228d03-23ea-4a47-a678-8d4db39132ad" />
+          </property>
+          <property Id="ddbbc97a-cab9-4ba1-ac91-c4819d318bc9" name="Email adres" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ecb2415a-ae63-45db-83d7-965f83f391c1" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="b9ed629c-a9f4-4c49-9ac7-02d4165e783b" name="Inschrijving" isAbstract="true" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e49051bc-b5d1-427e-9e50-40d56edbbbd0" />
+        <ownedAttributesInternal>
+          <property Id="5e6347e1-7237-4fbe-98dd-dd106b3709a0" name="Datum" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="006c16a2-a721-43fb-81b0-6b61f386c914" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="8351cd40-27e4-4e3b-9c5a-e25ed183815b" name="Lokaal" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d77a6ec6-623c-469c-847e-53a5efeb79b0" />
+        <targetEnds>
+          <association Id="d1f1e623-0d0b-4a2a-9d0d-cb42ce63eb5b" isDerived="false" sourceEndRoleName="" targetEndRoleName="Sessie wordt gegeven in een lokaal" isLeaf="false" isAbstract="false">
+            <classMoniker Id="0e27856b-3601-4821-939f-5cb1fbe3979a" LastKnownName="Sessie" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6c34478b-3afd-481e-9164-a95ef079186a" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="90b2d21a-7a0d-42a3-9cc2-76e8ead57178" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="49948c8a-aaac-4f1e-919f-7cb8a08b7a1c" name="Sessie wordt gegeven in een lokaal" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="1f6a4e66-3331-4938-90ee-f1ebd5ab30cf" name="Lower" value="0">
+                      <elementDefinition Id="93a969e4-8b53-4e1a-8c1d-6e09bbb1853d" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="840bdb75-87f5-486c-9404-fcbb5f5d41ac" name="Upper" value="*">
+                      <elementDefinition Id="b2103d0f-0362-4568-96ac-526bdb5d1be5" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="113f9729-2ef5-435f-b3a8-1728c07d627a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="6e24c9ef-7230-415e-9e3f-bbea0a93ff1c" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="991e214c-39f2-4877-94fa-22af1bffbc38" name="Nummer" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="dbc9e789-8e15-467d-a5f3-a41ea0af309b" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="72b216e8-e3e7-40be-a714-7728627f1b5a" name="Persoon" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="befef03f-732e-42a1-a120-da39b818a5b9" />
+        <targetEnds>
+          <association Id="a32585dd-29de-478b-99fd-b05e0da91d68" isDerived="false" sourceEndRoleName="" targetEndRoleName="Voorzitter van een conferentie" isLeaf="false" isAbstract="false">
+            <classMoniker Id="c75dbf2d-521f-47c6-9820-eec7e1a0d616" LastKnownName="Conferentie" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5aa7d5af-b7f7-482e-9b64-427d56445f77" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="51e3c3ac-6839-44c1-a7a5-f0c6a2ffc049" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="61b433fb-0926-4ff6-9e11-97b1c8e0fc59" name="Voorzitter van een conferentie" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="229be420-6fd9-48eb-8271-ee625342fcde" name="Lower" value="1">
+                      <elementDefinition Id="86d4762f-fa95-4711-9ed6-9da89047779f" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="a997285b-e57b-4142-9e2d-3bd5b9277a31" name="Upper" value="*">
+                      <elementDefinition Id="d46c1d31-0fc7-4178-8136-52a56c36fbc3" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="273b7442-39dc-487d-9e3f-a391e8665a33" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="70ace494-a950-4ed6-980e-2fb8e244ca0c" />
+          </association>
+          <association Id="b8f58073-8292-4789-93dc-e92d73f74ab1" isDerived="false" sourceEndRoleName="Deelnemer doet mee aan een conferentie dag" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="28758323-1f00-42eb-8a15-802ba1412465" LastKnownName="Conferentie dag" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b5783a56-0d4b-4c9c-b270-7be9cdb3d0b6" name="Deelnemer doet mee aan een conferentie dag" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="6fa7b099-e4c4-4fb1-bb99-e53b95076ad4" name="Lower" value="1">
+                      <elementDefinition Id="0aee70b2-cf46-43d6-a5f4-6b566f1dee38" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="5fa27beb-7249-4ab4-93d1-b5b53b34340c" name="Upper" value="*">
+                      <elementDefinition Id="5669aea0-4277-4eda-a623-c828fe476315" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="8ef9f5e9-ce99-4e31-a1ca-8537d91aa23e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="27e03bf1-c365-416f-8a00-8f3d1a13ca97" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="c6f337d4-fc93-406a-8f72-15abee559d56" name="Lower" value="1">
+                      <elementDefinition Id="1bbee531-c360-44cf-b324-cf48aa93ceaa" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="c5d72408-83c2-4000-a5f6-a96dbfb322c1" name="Upper" value="*">
+                      <elementDefinition Id="8d1c3c4c-eb6a-469a-b2fd-076daddb286e" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="c064ec09-f480-40f2-b49b-eef73cfb8c0b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="77d9f9a1-9463-4ed4-8133-8b3ed953a674" />
+          </association>
+          <association Id="b2c62711-762e-4dfc-b48c-de2fbc02455e" isDerived="false" sourceEndRoleName="" targetEndRoleName="Sessie wordt gegeven door een expert" isLeaf="false" isAbstract="false">
+            <classMoniker Id="0e27856b-3601-4821-939f-5cb1fbe3979a" LastKnownName="Sessie" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1f311127-4967-44f5-882b-94060067eea9" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="c98f1874-c871-4220-9ed3-2c20c27409b4" name="Lower" value="1">
+                      <elementDefinition Id="00cf1acd-0aee-466c-90a1-9f916de88a18" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="76df494d-3f60-4d71-b829-fbfd1bcf9f67" name="Upper" value="*">
+                      <elementDefinition Id="ff7fc0a2-7b32-4095-a148-cf7234f7958f" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="a6897daa-0199-4628-8759-784bcd9b3edc" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ea36209c-d451-4e14-84ee-a22b45c040d0" name="Sessie wordt gegeven door een expert" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="be28a77d-53d8-417b-84e1-a11ffe47b6d9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="dc4e658e-12d7-4644-a098-58e3ed51dab0" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="425c54ef-287d-486a-b6a0-f851d93ef185" name="Voornaam" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="39e4567d-230f-49be-8fe5-d0dbbe52d017" />
+          </property>
+          <property Id="3fe6f864-fb39-4827-ba6e-a8d89236ed12" name="Achternaam" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e1017f39-6adf-4f85-b690-a23308ea8635" />
+          </property>
+          <property Id="ec3a1644-74b9-444a-add6-3790159bfc54" name="Straat" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="04acde33-95af-4e1c-a828-a9a905d97ad7" />
+          </property>
+          <property Id="b3633da4-7fb7-4322-ae5b-44367e170db7" name="Huisnummer" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="817602d7-ec5d-41af-8888-bb56e2beb9c7" />
+          </property>
+          <property Id="d3ad2863-255e-47ad-be95-68c463b8d888" name="TelefoonNummer" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="80ff3901-e425-4263-8857-b201b53e879d" />
+          </property>
+          <property Id="dc8db02e-3472-4e9c-a472-6d071aae7865" name="GsmNummer" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="54de05aa-4e0a-45f5-8254-26f207ed4ac7" />
+          </property>
+          <property Id="c1e80a6e-0eb0-4e6a-b685-eba0d2f023a4" name="EmailAdres" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="800ed673-dd71-4939-aab4-edfd7bb6e3d3" />
+          </property>
+          <property Id="37f88168-7262-408d-ab8d-f52492abcdbc" name="Gebruikersnaam" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7a931a39-9c4d-4add-8a4f-6c6484fdfd5d" />
+          </property>
+          <property Id="9bad7f93-8be3-4066-aaed-d5cfb7ed2cdd" name="Wachtwoord" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6d0e88c8-b83c-4e8a-9b71-427f0dc82611" />
+          </property>
+          <property Id="914b512e-01b4-40db-a8ca-c30a88cf3475" name="IsOnline" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b489f4d0-cd68-4152-84e9-af949ed63775" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <enumeration Id="e3d66763-af4f-4596-bbcd-324ee1acb147" name="Functie" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="90f1507c-3689-44ca-bf42-b28255097770" />
+        <targetEnds>
+          <association Id="faafd633-b566-478a-a2f6-f8e82a13afd3" isDerived="false" sourceEndRoleName="Iedere persoon heeft een functie in het bedrijf" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="72b216e8-e3e7-40be-a714-7728627f1b5a" LastKnownName="Persoon" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="58cfdd05-0853-4d6c-8cce-1b4fd81100e8" name="Iedere persoon heeft een functie in het bedrijf" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3bf63b8f-6d5b-481b-91e5-1b63dcb73318" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="79b7bb96-d77e-475b-851e-372250cac9b9" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="e778f6bf-597e-4c9b-a272-9026191dc1e0" name="Lower" value="1">
+                      <elementDefinition Id="0e8b6c2c-fd5f-4c5d-9cc6-82194b1b3e2e" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="82eded1a-8063-4c89-80c5-1db654a36714" name="Upper" value="*">
+                      <elementDefinition Id="b1973bf6-29ce-4ca0-9cd7-4f22c398f2b8" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="c6e4a673-655b-4288-9365-b7604c606728" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="23cf5db2-62df-49f2-9416-0767b948f2bf" />
+          </association>
+        </targetEnds>
+        <ownedLiterals>
+          <enumerationLiteral Id="55f381a3-82e2-40a9-ab0c-74c7a5a63bbe" name="Voorzitter">
+            <elementDefinition Id="04e029ef-5ccc-4323-8de2-69e1c44e5539" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="f0b9e44d-8b7f-4524-9cd4-46b0f379e8e0" name="Expert">
+            <elementDefinition Id="eb971bda-24ab-4136-8cad-4a27deab7f2c" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="4aa0f9bf-4c7a-4d09-9c12-fe0fb96a38aa" name="Deelnemer">
+            <elementDefinition Id="8650396b-fce6-49c2-9836-295147be639f" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="64365bda-bcfa-4a9d-912f-c0bf95e9de4d" name="Adminestratieve medewerker">
+            <elementDefinition Id="31bdf8d1-1d97-4b3e-9be7-3b0063cd21d7" />
+          </enumerationLiteral>
+        </ownedLiterals>
+      </enumeration>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f1c172c6-b1d7-405c-a767-ad47f32dfb36" name="Gemeente" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="3fae7ef0-0839-421f-a281-1f96fc35e26c" />
+        <targetEnds>
+          <association Id="14f43de0-13a1-49cc-a6eb-7aba9a87a7cc" isDerived="false" sourceEndRoleName="" targetEndRoleName="Persoon woont in een gemeente" isLeaf="false" isAbstract="false">
+            <classMoniker Id="72b216e8-e3e7-40be-a714-7728627f1b5a" LastKnownName="Persoon" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bdd0715e-b3bf-4a0a-83ed-f1753d07e3c6" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="94a7959a-91c8-4560-a0f1-0d8877300369" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="882dacad-5f08-423e-8437-78cbef59de35" name="Persoon woont in een gemeente" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="17085ea4-b2c7-4c8f-a16c-500f5a06b3ca" name="Lower" value="0">
+                      <elementDefinition Id="49e0e2ae-28b1-4511-a455-5519249730ff" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="f51350a8-c139-4e4c-84fd-1593499b463c" name="Upper" value="*">
+                      <elementDefinition Id="f3e25b0c-e974-446a-824c-c68a965b15ff" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="1ad96f0d-6b99-4444-bf52-b9a1796d87c8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="bcb74380-23ed-498d-87ff-1afbaabc20f2" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="41b72c54-6f88-4f2a-a4fb-abdb8e9b535b" name="Naam" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="18cf2cac-bbc3-4bc8-93a0-5968a6449242" />
+          </property>
+          <property Id="1808da93-d57b-40c7-b736-5e5f35e08b84" name="Postcode" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="885f652b-9954-4316-bb38-ebcd41879096" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="8012919d-f1a2-49df-a1cb-6802abffdf48" name="Provincie" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="53feac94-1728-424f-9a2c-1a76f3daea85" />
+        <targetEnds>
+          <association Id="16b7ee65-6d34-4264-849a-348d2448d914" isDerived="false" sourceEndRoleName="Gemeente ligt in een provincie" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="f1c172c6-b1d7-405c-a767-ad47f32dfb36" LastKnownName="Gemeente" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="71eada5d-5b74-4cf0-93aa-2f28987dde50" name="Gemeente ligt in een provincie" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="191a1cd8-9d37-429e-8522-0ac88cac8a77" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fb73771c-5e6c-421b-9c46-a2a6b7034d7e" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="6499de6a-7e9b-4476-a253-8be974234baf" name="Lower" value="1">
+                      <elementDefinition Id="3f3e4fe8-9977-4458-ae4a-74e9800e0406" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="4664f84b-8121-4a7f-88df-c0360ed3dc5a" name="Upper" value="*">
+                      <elementDefinition Id="4210eca2-b2f5-4ad4-898e-81b4c0587912" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="e1663bbe-3ac4-4347-8229-2887eb9a1052" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="95636b6c-0a4f-4c8d-b565-726f30890ed5" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="12011498-6e1b-44f1-90f6-5b31b5ea4c0c" name="Naam" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="15751743-0a13-453d-9ffb-d94a6f4076a6" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="dfe0ecc1-6816-4483-a513-58c730a32856" name="Factuur" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="51fbfc69-b6d7-4910-baff-b37aad12fb9f" />
+        <targetEnds>
+          <association Id="cd202877-06a1-495b-983a-6860f6c27198" isDerived="false" sourceEndRoleName="betaald worden" targetEndRoleName="Factuur kan in schijven" isLeaf="false" isAbstract="false">
+            <classMoniker Id="63093e13-cd76-4b4c-9458-3ee9190d3fd9" LastKnownName="Betalingen" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="dfe354df-9f96-4f97-b78d-ad707efce4da" name="betaald worden" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="5e692fd4-9705-443f-855d-a60f595e05dc" name="Lower" value="1">
+                      <elementDefinition Id="47d5db7c-8af9-4bdf-9826-5c7af113120c" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="1a19690c-33af-4556-baf1-7b19b20868b3" name="Upper" value="*">
+                      <elementDefinition Id="d749a895-db29-4666-8e85-0241e9cc45f0" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="99c00ea0-5c81-41c9-9924-d4c171abf255" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ccda9e2b-1cca-4a7f-a67f-e6b75257f645" name="Factuur kan in schijven" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="2db8597a-9d04-4476-beb7-deb550f5d3ce" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="154f1577-4a99-45f2-b1f5-596766b829ca" />
+          </association>
+          <association Id="17fe5597-9719-4fd5-8521-82de8f3b2009" isDerived="false" sourceEndRoleName="is een factuur gekoppeld" targetEndRoleName="Aan een inschrijving" isLeaf="false" isAbstract="false">
+            <classMoniker Id="b9ed629c-a9f4-4c49-9ac7-02d4165e783b" LastKnownName="Inschrijving" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5987c84e-3afe-4f19-8ec1-33a5d281909a" name="is een factuur gekoppeld" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0da61529-d326-4dc7-ad7e-3a3b18adbd33" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cd8ac7f1-160d-4a10-96f1-75827049ea27" name="Aan een inschrijving" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="91fd0f0f-a066-476d-854c-3b7581000069" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="67e6bca8-804a-4552-a65a-710e550eddcb" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="a727a26a-63d7-4c31-b0fb-fd43435f7a9a" name="Totaal bedrag" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="48fc550f-5fd9-48de-bd77-b5d52b2a8664" />
+          </property>
+          <property Id="e646095f-505f-4c25-a7c6-b9796556c55e" name="Factuur nummer" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="fd9041b7-4be7-4c1b-bfd4-20c1cfc23bbf" />
+          </property>
+          <property Id="63ed934e-bda9-4a53-88a7-e8ca3d9a69e5" name="Opmaak datum" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f13169f7-0b18-4487-8657-93f63c224412" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="63093e13-cd76-4b4c-9458-3ee9190d3fd9" name="Betalingen" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b0ce2368-9834-4ce6-b432-747edd840106" />
+        <ownedAttributesInternal>
+          <property Id="c454bb5f-f832-4e72-930e-387509cf523e" name="Bedrag" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="86d28553-147c-4b22-af15-ca6b49421b03" />
+          </property>
+          <property Id="63a777e1-e94a-458a-b241-7c67a77a743b" name="Datum" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="57407155-11f1-4533-9343-3f067fab5a93" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="f801a3a3-87c8-4daa-9520-d514bbf8b3cc" name="ConferentieSysteemULM">
+    <elementDefinition Id="d2edd9a1-867e-487a-8655-f10e1e163c4c" />
+    <profileInstances>
+      <packageHasProfileInstances Id="6845c331-8640-4d91-804c-ff9e6fd40df0">
+        <profileInstance Id="4265c83e-b1fd-4a10-923a-99127d98490f" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="714ffd50-965e-42c1-b818-51144fdccc41">
+        <profileInstance Id="b3874e67-52f7-43ca-a635-400ec76bb816" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="2e85fb2b-97f4-47e4-a569-dda693f8dff0">
+        <profileInstance Id="c8afae0b-3197-441d-ad90-84379b78d21a" name="TextTemplateBindings">
+          <elementDefinition Id="c5584568-23ec-4412-b38a-5c04588a2549" />
+        </profileInstance>
+        <elementDefinition Id="31fe9c2b-4d6f-4a39-8948-fb49f9de683e" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>
