@@ -1,0 +1,14 @@
+In deze map vind je alles wat je nodig hebt:
+
+ * In excel bestand:
+	- Use case
+	- Senario's
+ * Afbeeldingen:
+	- Opgave pagina 1
+	- Opgave pagina 2
+	- Database model
+	- Klassenmodel
+	- Navigatie model (web)
+	- Navigatie model (programma)
+
+gelieve alle nog eens te controleren a.u.b en de opmerkingen terug te zenden.
